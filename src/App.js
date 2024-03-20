@@ -14,6 +14,8 @@ import {
  About,
  Testimonial,
 } from './components'
+import Courses from './components/Courses'
+import Faq from './components/Faq'
 
 function App() {
  return (
@@ -27,8 +29,8 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/reset' element={<ForgetPassword />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/testimonial' element={<Testimonial />} />
+      <Route path='/courses' element={<Courses />} />
+      <Route path='/faqs' element={<Faq />} />
       <Route path='/about' element={<About />} />
      </Routes>
     </main>
