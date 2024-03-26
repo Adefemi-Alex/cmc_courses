@@ -19,6 +19,7 @@ import Loader from "./../Loader";
 import "../index";
 
 import { ShowOnLogin, ShowOnLogout } from "./../HiddenLink";
+import back from "../../assets/images/back.png";
 
 // Privacy and Terms
 // import TermsAndCondPopup from '../TermsAndCondPopup'
@@ -76,8 +77,8 @@ function Navbar() {
     <>
       {isLoading && <Loader />}
       <nav
-        className="flex items-center justify-between px-[3.5rem]
-        background2 py-5 fixed w-screen z-50 tablet:px-8 "
+        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
+        style={{ backgroundImage: `url(${back})` }}
       >
         <div className="logo">
           <Link
@@ -134,7 +135,7 @@ function Navbar() {
           </li>
         </ul>
         {/* login */}
-        <div className="flex items-center text-lg lg:hidden">
+        <div className="flex items-center text-lg lg:hidden gap-9">
           <ShowOnLogout setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}>
             <li className="text-gray-light list-none">
               <NavLink
@@ -147,6 +148,12 @@ function Navbar() {
               </NavLink>
             </li>
           </ShowOnLogout>
+          {/* Get Started */}
+          <NavLink to="/getstarted">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Get Started
+            </button>
+          </NavLink>
 
           <ShowOnLogin setIsLogedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}>
             <div className="flex items-center sm:hidden">
@@ -170,7 +177,12 @@ function Navbar() {
               </li>
             </div>
           </ShowOnLogin>
+
+          {/* Get Started */}
+
+          {/* <div className="flex items-center justify-center mt-20 w-full"> */}
         </div>
+        {/* </div> */}
 
         {/* mobile screen */}
 

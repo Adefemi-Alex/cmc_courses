@@ -40,5 +40,5 @@ body {
 }
 
 .background2 {
-    background: linear-gradient(100deg, #2596be 38%, rgb(37, 150, 190) 38%);
+    background: linear-gradient(to right, rgb(37, 150, 190), rgb(37, 150, 190));
 }
