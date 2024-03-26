@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide, Navigation } from "swiper/react";
 import "swiper/css";
+import "swiper/css/bundle";
 import "swiper/css/navigation";
-import "swiper/css/bundle"; // Import Swiper bundle CSS
+import { Swiper, SwiperSlide } from "swiper/react";
 import icon1 from "../assets/images/icon1.png";
 import icon2 from "../assets/images/icon2.png";
 import icon3 from "../assets/images/icon3.png";
@@ -31,7 +31,7 @@ const CardCarousel = () => {
         spaceBetween={10}
         pagination={{ clickable: true }}
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 500 }}
         className="mx-20 my-10 w-200 h-[200px] max-w-screen-lg"
         navigation={{
           prevEl: ".swiper-button-prev",
@@ -40,7 +40,7 @@ const CardCarousel = () => {
       >
         {/* Card 1 */}
         <SwiperSlide>
-          <div className="bg-text-span shadow-lg rounded-lg overflow-hidden w-90">
+          <div className="background3 shadow-lg rounded-lg overflow-hidden w-90">
             <div className="relative">
               <img
                 src={icon1}
@@ -132,3 +132,5 @@ const CardCarousel = () => {
 };
 
 export default CardCarousel;
+
+

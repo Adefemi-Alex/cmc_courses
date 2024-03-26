@@ -150,7 +150,7 @@ function Navbar() {
           </ShowOnLogout>
           {/* Get Started */}
           <NavLink to="/getstarted">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="background3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Get Started
             </button>
           </NavLink>

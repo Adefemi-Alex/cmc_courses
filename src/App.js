@@ -34,7 +34,7 @@ function App() {
             <Route path="/getstarted" element={<SignUp />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );
