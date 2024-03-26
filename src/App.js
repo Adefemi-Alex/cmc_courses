@@ -4,15 +4,13 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import {
-  Navbar,
-  Home,
-  Footer,
-  Login,
-  SignUp,
-  ForgetPassword,
-  Contact,
   About,
-  Testimonial,
+  Footer,
+  ForgetPassword,
+  Home,
+  Login,
+  Navbar,
+  SignUp,
 } from "./components";
 import Courses from "./components/Courses";
 import Faq from "./components/Faq";
@@ -36,7 +34,7 @@ function App() {
             <Route path="/getstarted" element={<SignUp />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
