@@ -15,11 +15,11 @@ import { toast } from "react-toastify";
 import avatar from "../../assets/images/avatar.png";
 import logo from "../../assets/images/logo3.png";
 import { auth } from "../firebase/config";
-import Loader from "./../Loader";
 import "../index";
+import Loader from "./../Loader";
 
-import { ShowOnLogin, ShowOnLogout } from "./../HiddenLink";
 import back from "../../assets/images/back.png";
+import { ShowOnLogin, ShowOnLogout } from "./../HiddenLink";
 
 // Privacy and Terms
 // import TermsAndCondPopup from '../TermsAndCondPopup'
@@ -31,6 +31,7 @@ function Navbar() {
   const [userName, setUserName] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggle = () => {
     setIsMenuOPen(!isMenuOpen);
@@ -77,8 +78,12 @@ function Navbar() {
     <>
       {isLoading && <Loader />}
       <nav
-        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
-        style={{ backgroundImage: `url(${back})` }}
+        // className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
+        // style={{ backgroundImage: `url(${back})` }}
+
+        className={`bg-white flex items-center justify-between px-[3.5rem] py-5 w-full fixed top-0 transition-all ${
+          isScrolled ? "border-b-2 border-gray-200" : ""
+        }`}
       >
         <div className="logo">
           <Link
