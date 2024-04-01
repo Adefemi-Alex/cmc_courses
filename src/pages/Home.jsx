@@ -28,13 +28,12 @@ function Home() {
     <>
       {/* Head */}
       <div
-        className="font-nunito z-0 h-full w-full justify-center items-center"
+        className="mt-5 mb-40 font-nunito z-0 h-full w-full justify-center items-center"
         // style={{ backgroundImage: `url(${back})` }}
       >
-        
         <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[570px]">
           <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full z-0">
-            <div className="mt-[150px]">
+            <div className="mt-[100px]">
               <h1 className="font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
                 Discover limitless learning and earning possibilities
                 <span className="text-span"> Online</span>
@@ -124,8 +123,9 @@ function Home() {
 
         {/* About Us section */}
 
-        <div className="-mt-14" 
-        // style={{ backgroundImage: `url(${back})` }}
+        <div
+          className="-mt-14"
+          // style={{ backgroundImage: `url(${back})` }}
         >
           {/* Arrow and the spiral background image section */}
           <div className="flex justify-between mb-0">
