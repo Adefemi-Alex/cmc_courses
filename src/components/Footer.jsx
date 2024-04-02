@@ -36,9 +36,7 @@ function Footer() {
               <span className="text-span">ExpertSkillz</span>
             </h1>
           </div>
-          <div className="w-full h-[30vh]">
-            <TestimonialCarousel />
-          </div>
+          <div className="w-full h-[30vh]">{/* <TestimonialCarousel /> */}</div>
 
           {/* Second section */}
           <div className="w-60">
