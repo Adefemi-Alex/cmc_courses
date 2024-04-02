@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+
 import AboutSection1 from "../../components/about/About1";
+import AboutSection2 from "../../components/about/OurMission";
+import AboutSection3 from "../../components/about/OurVisions";
 
 const About = () => {
     return (
@@ -11,6 +14,8 @@ const About = () => {
                     <span className='text-span text-fontSize1 sm:text-fontSize3'>Everything You Need To Know About ExpertSkillz</span>
                 </div>
                 <AboutSection1 />
+                <AboutSection2 />
+                <AboutSection3 />
             </section>
         </>
     )
