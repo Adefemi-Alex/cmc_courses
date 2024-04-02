@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import AboutSection1 from "../../components/about/About1";
 
 const About = () => {
     return (
@@ -9,6 +10,7 @@ const About = () => {
                     <h1 className="text-lg">About Us</h1>
                     <span className='text-span text-fontSize1 sm:text-fontSize3'>Everything You Need To Know About ExpertSkillz</span>
                 </div>
+                <AboutSection1 />
             </section>
         </>
     )
