@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { PrivacyAndPlicy, TermsAndCondPopup, Testimonial } from "../components";
 import logo4 from "../assets/images/logo4.png";
 import TestimonialCarousel from "./HomeCards/TestimonialCard";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   const date = new Date();
@@ -26,7 +27,7 @@ function Footer() {
 
   return (
     <>
-      <div className="border border-black footer flex justify-around items-center w-full h-full">
+      <div className="font-nunito border border-black footer flex justify-around items-center w-full h-full">
         {/* <div className="flex justify-around items-center"> */}
         <div className="w-[100vh] mt-10">
           {/* Footer about expertskillz */}
@@ -42,6 +43,10 @@ function Footer() {
           <div className="w-60">
             <img src={logo4} alt="logo" />
           </div>
+          <div className="text-white">
+            <p>Join Our Newsletter</p>
+          </div>
+          <div> </div>
         </div>
         {/* Message us section */}
         <div className="block border border-none rounded-xl sendMessage py-10 px-10 mr-20 mt-20 w-[70vh]">
@@ -80,6 +85,13 @@ function Footer() {
               Send
             </button>
           </div>
+        <div>
+          <h1>Company</h1>
+
+          <p>
+            <NavLink to="">Home</NavLink>
+          </p>
+        </div>
         </div>
         {/* </div> */}
       </div>
