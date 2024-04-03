@@ -46,5 +46,13 @@ body {
 .background3 {
     background: linear-gradient(to right, rgba(26, 245, 223, 1), rgba(42, 251, 188, 1));
     box-shadow: 0px 24px 24px 0px rgba(79, 78, 85, 0.1);
-    
+
+}
+
+.footer {
+    background-color: rgba(22, 28, 40, 1);
+
+}
+.sendMessage{
+    background-color: rgba(34, 41, 56, 1);
 }

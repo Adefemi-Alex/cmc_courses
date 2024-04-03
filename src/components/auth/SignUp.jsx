@@ -4,7 +4,7 @@ import signupBg from '../../assets/images/signup1.png'
 import { toast } from 'react-toastify'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase/config'
-import Loader from './../Loader'
+import Loader from '../../components/main/Loader'
 
 function SignUp() {
  const [email, setEmail] = useState('')

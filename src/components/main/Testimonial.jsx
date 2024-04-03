@@ -4,7 +4,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { Link } from 'react-router-dom'
-import homeBg from '../assets/images/homebg2.jpg'
+import homeBg from '../../assets/images/homebg2.jpg'
 import Features from './Features'
 import Courses from './Courses'
 import Reviews from './Reviews'

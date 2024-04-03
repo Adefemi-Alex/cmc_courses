@@ -11,9 +11,9 @@ import {
   Login,
   Navbar,
   SignUp,
-} from "./components";
-import Courses from "./components/Courses";
-import Faq from "./components/Faq";
+} from "./components/main/";
+import Courses from "./components/main/Courses";
+import Faq from "./components/main/Faq";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
       <BrowserRouter>
         <ToastContainer />
         <Navbar />
-        <main className="mt-[4.5rem] w-full">
-        {/* <main className="w-full"> */}
+        {/* <main className="mt-[4.5rem] w-full"> */}
+        <main className="w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -34,7 +34,7 @@ function App() {
             <Route path="/getstarted" element={<SignUp />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
