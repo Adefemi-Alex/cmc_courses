@@ -20,8 +20,8 @@ import vector from "../assets/images/Vector3.png";
 import back from "../assets/images/back.png";
 import background from "../assets/images/background.png";
 import HomeImg2 from "../assets/images/person2.png";
-import CoursesCard from "./CoursesCard";
 import { cards } from "../components/WhyUsData";
+// import CoursesCard from "./CoursesCard";
 
 function Home() {
   return (
@@ -309,7 +309,7 @@ function Home() {
               Say About Us
             </h1>
           </div>
-          {/* <CardCarousel /> */}
+          {/* <CoursesCard /> */}
         </div>
 
         {/* Learn and Earn section */}
