@@ -13,7 +13,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import avatar from "../../assets/images/avatar.png";
-import logo from "../../assets/images/logo3.png";
+import logo from "../../assets/images/logo2.png";
 import { auth } from "../firebase/config";
 import "../index";
 import Loader from "./../Loader";
@@ -78,12 +78,12 @@ function Navbar() {
     <>
       {isLoading && <Loader />}
       <nav
-        // className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
-        // style={{ backgroundImage: `url(${back})` }}
+        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
+        style={{ backgroundImage: `url(${back})` }}
 
-        className={`bg-white flex items-center justify-between px-[3.5rem] py-5 w-full fixed top-0 transition-all z-40 ${
-          isScrolled ? "border-b-2 border-gray-200" : ""
-        }`}
+        // className={`bg-white flex items-center justify-between px-[3.5rem] py-5 w-full fixed top-0 transition-all z-40 ${
+        //   isScrolled ? "border-b-2 border-gray-200" : ""
+        // }`}
       >
         <div className="logo">
           <Link

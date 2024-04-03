@@ -20,21 +20,20 @@ import vector from "../assets/images/Vector3.png";
 import back from "../assets/images/back.png";
 import background from "../assets/images/background.png";
 import HomeImg2 from "../assets/images/person2.png";
-import CardCarousel from "../components/CardCarousel";
-import CoursesCard from "./CoursesCard";
+import { cards } from "../components/WhyUsData";
+// import CoursesCard from "./CoursesCard";
 
 function Home() {
   return (
     <>
       {/* Head */}
       <div
-        className="font-nunito z-0 h-full w-full justify-center items-center"
-        // style={{ backgroundImage: `url(${back})` }}
+        className="mt-0 mb-40 font-nunito z-0 h-full w-full justify-center items-center"
+        style={{ backgroundImage: `url(${back})` }}
       >
-        
         <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[570px]">
           <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full z-0">
-            <div className="mt-[150px]">
+            <div className="mt-[100px]">
               <h1 className="font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
                 Discover limitless learning and earning possibilities
                 <span className="text-span"> Online</span>
@@ -119,13 +118,35 @@ function Home() {
             with ExpertSkillz.
           </p>
           {/* Card Section */}
-          <CardCarousel />
+          <div className="grid grid-cols-4 gap-4 mx-20 my-10">
+            {cards.map((cards, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <div className="relative">
+                  <img
+                    src={cards.image}
+                    alt="Card Image"
+                    className="absolute top-4 left-4 w-13 h-14"
+                  />
+                </div>
+                <div className="p-4 flex flex-col justify-center h-full">
+                  <h1 className="text-black text-xl font-bold mt-20 mb-2">
+                    {cards.title}
+                  </h1>
+                  <p className="text-gray-700">{cards.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* About Us section */}
 
-        <div className="-mt-14" 
-        // style={{ backgroundImage: `url(${back})` }}
+        <div
+          className="-mt-14"
+          // style={{ backgroundImage: `url(${back})` }}
         >
           {/* Arrow and the spiral background image section */}
           <div className="flex justify-between mb-0">
@@ -239,7 +260,7 @@ function Home() {
             interest and financial goals.
           </p>
           {/* Card Section */}
-          <CoursesCard />
+          {/* <CoursesCard /> */}
 
           {/* Explore Button */}
           <div className="flex justify-center w-full">
@@ -288,7 +309,7 @@ function Home() {
               Say About Us
             </h1>
           </div>
-          <CardCarousel />
+          {/* <CoursesCard /> */}
         </div>
 
         {/* Learn and Earn section */}
