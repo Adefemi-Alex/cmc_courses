@@ -1,10 +1,10 @@
 /* eslint-disable */
 
 import React from "react";
-import why1 from "../assets/images/icon1.png";
-import why2 from "../assets/images/icon2.png";
-import why3 from "../assets/images/icon3.png";
-import why4 from "../assets/images/icon4.png";
+import why1 from "../../assets/images/icon1.png";
+import why2 from "../../assets/images/icon2.png";
+import why3 from "../../assets/images/icon3.png";
+import why4 from "../../assets/images/icon4.png";
 
 export const cards = [
   {

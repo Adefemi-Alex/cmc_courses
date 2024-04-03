@@ -9,9 +9,9 @@ import {
  FaTwitter,
  FaWhatsapp,
 } from 'react-icons/fa'
-import contactBg from '../assets/images/homebg1.jpg'
+import contactBg from '../../assets/images/homebg1.jpg'
 import emailjs from '@emailjs/browser'
-import Loader from '../components/Loader'
+import Loader from '../../components/main/Loader'
 
 import { toast } from 'react-toastify'
 

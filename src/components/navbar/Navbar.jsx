@@ -15,11 +15,11 @@ import { toast } from "react-toastify";
 import avatar from "../../assets/images/avatar.png";
 import logo from "../../assets/images/logo2.png";
 import { auth } from "../firebase/config";
-import "../index";
-import Loader from "./../Loader";
+import "../main/index";
+import Loader from "../main/Loader";
 
 import back from "../../assets/images/back.png";
-import { ShowOnLogin, ShowOnLogout } from "./../HiddenLink";
+import { ShowOnLogin, ShowOnLogout } from "../main/HiddenLink";
 
 // Privacy and Terms
 // import TermsAndCondPopup from '../TermsAndCondPopup'

@@ -1,6 +1,6 @@
 import React from 'react'
-import expertSkillzImg from '../assets/images/ExpertSkillz2.PNG'
-import expertSkillzImg2 from '../assets/images/expertsSkillz4.jpg'
+import expertSkillzImg from '../../assets/images/ExpertSkillz2.PNG'
+import expertSkillzImg2 from '../../assets/images/expertsSkillz4.jpg'
 import { FaCheckCircle, FaToolbox, FaTrophy, FaHandshake } from 'react-icons/fa'
 
 function Features() {

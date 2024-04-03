@@ -5,7 +5,7 @@ import googleLogo from '../../assets/images/google.png'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase/config'
 import { toast } from 'react-toastify'
-import Loader from './../Loader'
+import Loader from '../../components/main/Loader'
 
 function Login() {
  const [email, setEmail] = useState('')

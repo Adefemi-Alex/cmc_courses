@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { data } from '../faqdata'
+import { data } from '../../faqdata'
 import SingleQuestion from './SingleQuestion'
 
 const Faq = () => {
