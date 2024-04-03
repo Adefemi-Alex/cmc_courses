@@ -1,105 +1,348 @@
-import React from 'react'
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules'
-import './Home.css'
-import homeBg from '../assets/images/homebg.jpg'
-import homeBg1 from '../assets/images/homebg1.jpg'
-import homeBg2 from '../assets/images/homebg2.jpg'
+import "./Home.css";
 // react icons
 
-import { Link } from 'react-router-dom'
-import Features from '../components/Features'
-import Faq from './../components/Faq'
+import { NavLink } from "react-router-dom";
+import ChooseLine from "../assets/images/ChooseLine.png";
+import HomeCurve from "../assets/images/HomeCurve.png";
+import HomeImg from "../assets/images/HomeImg.png";
+import HomeLine from "../assets/images/HomeLine.png";
+import vector2 from "../assets/images/Vector2.png";
+import vector from "../assets/images/Vector3.png";
+import back from "../assets/images/back.png";
+import background from "../assets/images/background.png";
+import HomeImg2 from "../assets/images/person2.png";
+import CardCarousel from "../components/CardCarousel";
+import CoursesCard from "./CoursesCard";
 
 function Home() {
- return (
-  <>
-   <div className='home'>
-    <Swiper
-     pagination={{ clickable: true }}
-     modules={[Pagination, Autoplay]}
-     autoplay={{ delay: 5000 }}>
-     <SwiperSlide className='h-[500px] sm:h-[60vh]'>
-      <div className='swiper-slide'>
-       <img src={homeBg} alt='home' className='w-full h-[100%]' />
-       <div
-        className='absolute bg-backgroundRgba w-full h-full leading-8
-       flex justify-center flex-col items-center p-3'>
-        <h1
-         className='text-fontSize1 sm:text-2xl
-        sm:mt-[50px] text-lightBlue font-extrabold text-center'>
-         Master Online Success With ExpertSkillz
-        </h1>
-        <p className='mb-3 p-2 text-slate-200 font-semibold'>
-         Unlock the Power of Digital Marketing, Boost Your Income, and Achieve
-         Your Dreams. Learn from the Best to Be the Best.
-        </p>
-        <Link
-         to='https://expertskillz.pledre.school/course-details/complete-affiliate-mastery-course-cmc'
-         className='bg-lightBlue p-[10px] rounded-md
-        py-[10px] px-[30px] hover:bg-lightpurple hover:font-semibold'>
-         Join Us Now
-        </Link>
-       </div>
-      </div>
-     </SwiperSlide>
+  return (
+    <>
+      {/* Head */}
+      <div
+        className="font-nunito z-0 h-full w-full justify-center items-center"
+        // style={{ backgroundImage: `url(${back})` }}
+      >
+        
+        <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[570px]">
+          <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full z-0">
+            <div className="mt-[150px]">
+              <h1 className="font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
+                Discover limitless learning and earning possibilities
+                <span className="text-span"> Online</span>
+              </h1>
+            </div>
+            <div>
+              <img
+                src={HomeLine}
+                alt="line"
+                className="w-[350px] h-[40px] ml-8 mt-8"
+              />
+            </div>
+            <div>
+              <p className="ml-8 mt-10">
+                Unleash Your Potential: Discover and cultivate your skills for
+                financial growth with ExpertSkillz.
+              </p>
+            </div>
+            <div className="flex items-center ml-40">
+              {/* Get Started */}
+              <div className="mt-10">
+                <NavLink to="/getstarted">
+                  <button className="background3 hover:bg-white mr-10 w-full text-black font-bold py-2 px-4 rounded-full">
+                    Get Started
+                  </button>
+                </NavLink>
+              </div>
+              <div className="-mt-10 ml-90 w-full">
+                <img
+                  src={HomeCurve}
+                  alt="curve"
+                  className="w-[950px] h-[180px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="md:mx-0 ml-0 md:ml-2 xl:ml-4">
+            <img
+              src={HomeImg}
+              alt="person"
+              className="w-[800px] h-[650px] object-fit"
+            />
+          </div>
+        </div>
 
-     <SwiperSlide className='h-[500px] sm:h-[60vh]'>
-      <div className='swiper-slide'>
-       <img src={homeBg1} alt='home' className='w-full h-[100%]' />
-       <div
-        className='absolute bg-backgroundRgba w-full h-full leading-8
-       flex justify-center flex-col items-center p-3'>
-        <h1 className='text-lightBlue text-fontSize1 sm:text-2xl font-extrabold leading-10 text-center'>
-         The No 1 Platform To Learn How To Build An Income Source Online
-        </h1>
-        <p className='mb-3 text-slate-200 font-semibold md:mt-5'>
-         Start earning your first with affiliate marketing
-        </p>
-        <Link
-         to='https://expertskillz.pledre.school/course-details/complete-affiliate-mastery-course-cmc'
-         className='bg-lightBlue p-[10px] rounded-md
-        py-[10px] px-[30px]  hover:bg-lightpurple hover:font-semibold'>
-         Join Us Now
-        </Link>
-       </div>
-      </div>
-     </SwiperSlide>
+        {/* Why choose us */}
+        <div className="-mt-20 z-0 ">
+          {/* Arrow and the spiral background image section */}
+          <div className="flex justify-between mb-0">
+            <div className="ml-30 mt-40  w-full h-full">
+              <img
+                src={ChooseLine}
+                alt="line"
+                className="ml-[57%] mt-[6px] w-[200px] h-full object-cover"
+              />
+            </div>
+            {/* Centered image */}
+            <div className="w-[650px]">
+              <img
+                src={background}
+                alt="line"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+          {/* Header section */}
+          <div className="flex justify-center items-center -mt-60">
+            <h1 className="ml-10 text-4xl lg:text-5xl xl:text-6xl relative">
+              Why Choose{" "}
+              <span className="relative inline-block w-20">
+                Us?
+                <img
+                  src={vector2}
+                  alt="line"
+                  className="absolute top-1/3 transform -translate-y-1/2 right-2 z-0 h-15 w-[100px]"
+                />
+              </span>
+            </h1>
+          </div>
+          <p className="mt-7 flex justify-center items-center ml-10">
+            Experience boundless opportunities at your fingertips
+            with ExpertSkillz.
+          </p>
+          {/* Card Section */}
+          <CardCarousel />
+        </div>
 
-     <SwiperSlide className='h-[500px] sm:h-[60vh]'>
-      <div className='swiper-slide'>
-       <img src={homeBg2} alt='home' className='w-full h-[100%]' />
-       <div
-        className='absolute bg-backgroundRgba w-full h-full leading-8
-       flex justify-center flex-col items-center p-3'>
-        <h1 className='text-lightBlue text-fontSize1 sm:text-2xl font-extrabold leading-10 text-center'>
-         Learn How To Build A 6-7Figure Income Source Online
-        </h1>
-        <p className='mb-3 text-slate-200 font-semibold'>
-         Step-by-step guide to earning profitable figures from affiliate
-         marketing for complete beginners
-        </p>
-        <Link
-         to='https://expertskillz.pledre.school/course-details/complete-affiliate-mastery-course-cmc'
-         className='bg-lightBlue py-[10px] px-[30px] rounded-md  hover:bg-lightpurple hover:font-semibold'>
-         Join Us Now
-        </Link>
-       </div>
-      </div>
-     </SwiperSlide>
-    </Swiper>
-   </div>
+        {/* About Us section */}
 
-   <Features />
-   <Faq />
-  </>
- )
+        <div className="-mt-14" 
+        // style={{ backgroundImage: `url(${back})` }}
+        >
+          {/* Arrow and the spiral background image section */}
+          <div className="flex justify-between mb-0">
+            <div className="ml-30 mt-40  w-full h-full">
+              <img
+                src={ChooseLine}
+                alt="line"
+                className="ml-[57%] mt-[6px] w-[200px] h-full object-fit"
+              />
+            </div>
+            {/* Centered image */}
+            <div className="w-[650px] h-full">
+              <img src={background} alt="line" className="w-full object-fit" />
+            </div>
+          </div>
+
+          {/* About Header section */}
+
+          <div className="flex justify-center items-center -mt-60 w-full h-full">
+            {/* <div className="ml-10 text-4xl lg:text-5xl xl:text-6xl"> */}
+            <h1 className="ml-10 text-4xl lg:text-5xl xl:text-6xl relative">
+              About{" "}
+              <span className="relative inline-block w-20">
+                Us?
+                <img
+                  src={vector2}
+                  alt="line"
+                  className="absolute top-1/3 transform -translate-y-1/2 right-2 z-0 h-15 w-[100px]"
+                />
+              </span>
+            </h1>
+            {/* </div> */}
+          </div>
+          {/* About us body */}
+          <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
+            <div className="mt-4 md:mx-0 ml-8 md:ml-2 xl:ml-4">
+              <img
+                src={HomeImg2}
+                alt="person"
+                className="w-[680px] h-[500px] object-fit"
+              />
+            </div>
+            <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
+              <div className="mt-40">
+                <h1 className="font-nunito font-bold text-4xl md:text-4xl xl:text-5xl leading-tight">
+                  High-Quality Trainings and Guidance to Achieve Great Results
+                  with Your Online Skill.
+                </h1>
+              </div>
+              <div>
+                <p className="mt-10">
+                  Our premium training and tailored guidance empower you to
+                  succeed regardless of your prior experience.
+                </p>
+              </div>
+              <div className="flex items-left mt-10">
+                {/* Get Started */}
+                <NavLink to="/getstarted">
+                  <button className="background3 hover:background text-black font-bold py-2 px-4 rounded-full">
+                    Learn More
+                  </button>
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Get Courses */}
+
+        <div className="-mt-20 z-0 w-full">
+          {/* Arrow and the spiral background image section */}
+          <div className="flex justify-between mb-2">
+            <div className="ml-30 mt-40  w-full h-full">
+              <img
+                src={ChooseLine}
+                alt="line"
+                className="ml-[57%] mt-[6px] w-[200px] h-full object-cover"
+              />
+            </div>
+            {/* Centered image */}
+            <div className="w-[650px]">
+              <img
+                src={background}
+                alt="line"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+          {/* Header section */}
+          <div className="flex justify-center items-center -mt-60">
+            <h1 className="ml-8 text-4xl lg:text-5xl xl:text-6xl relative">
+              Get{" "}
+              <span className="relative inline-block w-[170px]">
+                Courses
+                <img
+                  src={vector}
+                  alt="line"
+                  className="absolute top-1/3 transform -translate-y-1/2 right-3 z-0 h-[70px] w-[400px]"
+                />
+              </span>
+            </h1>
+          </div>
+
+          <h2 className="text-2xl mt-7 flex justify-center items-center">
+            Explore Our Popular Classes
+          </h2>
+          <p className="mt-7 flex justify-center items-center mx-60">
+            Unlock the path to success with our exceptional done for you
+            blueprints. Explore a diverse range of courses covering trending
+            online skills and model. Choose the one that best suits your
+            interest and financial goals.
+          </p>
+          {/* Card Section */}
+          <CoursesCard />
+
+          {/* Explore Button */}
+          <div className="flex justify-center w-full">
+            {/* Get Started */}
+            <NavLink to="/getstarted">
+              <button className="background3 hover:background text-black w-[200px] font-bold py-2 px-4 rounded-full">
+                Explore
+              </button>
+            </NavLink>
+          </div>
+        </div>
+
+        {/* Students Remark */}
+
+        <div className="-mt-40 z-0 w-full">
+          {/* Arrow and the spiral background image section */}
+          <div className="flex justify-between mb-2">
+            <div className="ml-30 mt-40  w-full h-full">
+              <img
+                src={ChooseLine}
+                alt="line"
+                className="ml-[57%] mt-[6px] w-[200px] h-full object-cover"
+              />
+            </div>
+            {/* Centered image */}
+            <div className="w-[650px]">
+              <img
+                src={background}
+                alt="line"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+          {/* Header section */}
+          <div className="flex justify-center items-center -mt-[190px]">
+            <h1 className="ml-8 text-4xl lg:text-5xl xl:text-6xl relative">
+              What{" "}
+              <span className="relative inline-block ml-3 -mr-3 w-[180px]">
+                Students
+                <img
+                  src={vector}
+                  alt="line"
+                  className="absolute top-1/3 transform -translate-y-1/2 right-4 z-0 h-[80px] w-[190px]"
+                />
+              </span>
+              Say About Us
+            </h1>
+          </div>
+          <CardCarousel />
+        </div>
+
+        {/* Learn and Earn section */}
+
+        <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[570px]">
+          <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full z-0">
+            <div className="mt-[150px]">
+              <h1 className="font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
+                Discover limitless learning and earning possibilities
+                <span className="text-span"> Online</span>
+              </h1>
+            </div>
+            <div>
+              <img
+                src={HomeLine}
+                alt="line"
+                className="w-[350px] h-[40px] ml-8 mt-8"
+              />
+            </div>
+            <div>
+              <p className="ml-8 mt-10">
+                Unleash Your Potential: Discover and cultivate your skills for
+                financial growth with ExpertSkillz.
+              </p>
+            </div>
+            <div className="flex items-center ml-40">
+              {/* Get Started */}
+              <div className="mt-10">
+                <NavLink to="/getstarted">
+                  <button className="background3 hover:bg-white mr-10 w-full text-black font-bold py-2 px-4 rounded-full">
+                    Get Started
+                  </button>
+                </NavLink>
+              </div>
+              <div className="-mt-10 ml-90 w-full">
+                <img
+                  src={HomeCurve}
+                  alt="curve"
+                  className="w-[950px] h-[180px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="md:mx-0 ml-0 md:ml-2 xl:ml-4">
+            <img
+              src={HomeImg}
+              alt="person"
+              className="w-[800px] h-[650px] object-fit"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;

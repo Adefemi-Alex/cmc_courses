@@ -2,30 +2,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
- /* font-family: 'Montserrat', sans-serif; */
- font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Remove webkit scrollbar */
 .termsCondition::-webkit-scrollbar {
- width: 0;
- height: 0;
+    width: 0;
+    height: 0;
 }
 
 /* Remove webkit scrollbar track */
 .termsCondition::-webkit-scrollbar-track {
- display: none;
+    display: none;
 }
 
 /* Remove webkit scrollbar thumb */
 .termsCondition::-webkit-scrollbar-thumb {
- display: none;
+    display: none;
+}
+
+
+.background:hover {
+    background-color: #B7ECD5;
+}
+
+.background2 {
+    background: linear-gradient(to right, rgb(37, 150, 190), rgb(37, 150, 190));
+}
+
+.background3 {
+    background: linear-gradient(to right, rgba(26, 245, 223, 1), rgba(42, 251, 188, 1));
+    box-shadow: 0px 24px 24px 0px rgba(79, 78, 85, 0.1);
+    
 }
