@@ -11,16 +11,16 @@ import "./Home.css";
 // react icons
 
 import { NavLink } from "react-router-dom";
-import ChooseLine from "../assets/images/ChooseLine.png";
-import HomeCurve from "../assets/images/HomeCurve.png";
-import HomeImg from "../assets/images/HomeImg.png";
-import HomeLine from "../assets/images/HomeLine.png";
-import vector2 from "../assets/images/Vector2.png";
-import vector from "../assets/images/Vector3.png";
-import back from "../assets/images/back.png";
-import background from "../assets/images/background.png";
-import HomeImg2 from "../assets/images/person2.png";
-import { cards } from "../components/WhyUsData";
+import ChooseLine from "../../assets/images/ChooseLine.png";
+import HomeCurve from "../../assets/images/HomeCurve.png";
+import HomeImg from "../../assets/images/HomeImg.png";
+import HomeLine from "../../assets/images/HomeLine.png";
+import vector2 from "../../assets/images/Vector2.png";
+import vector from "../../assets/images/Vector3.png";
+import back from "../../assets/images/back.png";
+import background from "../../assets/images/background.png";
+import HomeImg2 from "../../assets/images/person2.png";
+import { cards } from "../../components/main/WhyUsData";
 // import CoursesCard from "./CoursesCard";
 
 function Home() {

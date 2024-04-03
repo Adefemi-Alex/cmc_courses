@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { PrivacyAndPlicy, TermsAndCondPopup, Testimonial } from "../components";
-import logo4 from "../assets/images/logo4.png";
-import TestimonialCarousel from "./HomeCards/TestimonialCard";
+import { PrivacyAndPlicy, TermsAndCondPopup, Testimonial } from "../../components/main";
+import logo4 from "../../assets/images/logo4.png";
+import TestimonialCarousel from "../home/TestimonialCard";
 import { NavLink } from "react-router-dom";
 
 function Footer() {

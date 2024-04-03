@@ -11,9 +11,9 @@ import {
   Login,
   Navbar,
   SignUp,
-} from "./components";
-import Courses from "./components/Courses";
-import Faq from "./components/Faq";
+} from "./components/main/";
+import Courses from "./components/main/Courses";
+import Faq from "./components/main/Faq";
 
 function App() {
   return (

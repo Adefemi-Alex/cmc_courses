@@ -1,5 +1,5 @@
 import React from 'react'
-import loadindImg from '../assets/images/loaiding.gif'
+import loadindImg from '../../assets/images/loaiding.gif'
 import { createPortal } from 'react-dom'
 
 function Loader() {

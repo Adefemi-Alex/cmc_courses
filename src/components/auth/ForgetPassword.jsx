@@ -4,7 +4,7 @@ import forgetIMg from '../../assets/images/forget.png'
 import { sendPasswordResetEmail } from 'firebase/auth'
 import { auth } from '../firebase/config'
 import { toast } from 'react-toastify'
-import Loader from './../Loader'
+import Loader from '../../components/main/Loader'
 
 const ForgetPassword = () => {
  const [email, setEmail] = useState('')
