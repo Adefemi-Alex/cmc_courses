@@ -4,7 +4,7 @@ import { GiBookmarklet } from "react-icons/gi";
 import coursBg from "../../assets/images/cmcCourse.jpg";
 import coursBg1 from "../../assets/images/coursebg.png";
 import back from "../../assets/images/back.png";
-import CoursesMission from "../../pages/courses/coursesMission";
+import CourseMission from "../../pages/courses/CourseMission";
 import { Link } from "react-router-dom";
 
 function Courses() {
@@ -20,7 +20,7 @@ function Courses() {
             find amazing courses with expertSkillz
           </span>
         </section>
-        <CoursesMission />
+        <CourseMission />
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
