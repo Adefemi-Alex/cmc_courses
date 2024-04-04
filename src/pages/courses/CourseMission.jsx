@@ -1,5 +1,5 @@
 import React from "react";
-import missionBg from "../../assets/images/photo-1530893609608-32a9af3aa95c.jpeg";
+import missionBg from "../../assets/images/courses-main.jfif";
 // import aboutimg1 from "../../assets/images/about/about1.png";
 import about from "../../assets/images/about/about.svg";
 const CourseMission = () => {
@@ -19,7 +19,7 @@ const CourseMission = () => {
                   you can do with Expertskillz
                 </span>
               </h2>
-              <p className="text-gray-400 text-fontSize2 sm:text-sm font-light ">
+              <p className="text-[#696984] text-xl sm:text-sm font-normal font-poppins ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. maiores
                 animi dicta quidem quod rerum ex facilis ullam dolor labore, ea
                 debitis incidunt quia ipsa vitae sapiente, iure sequi beatae?
@@ -32,15 +32,17 @@ const CourseMission = () => {
                 alt="Card Image"
                 className="absolute -top-11 -left-1 -z-50 sm:w-50 sm:-right-8"
               />
-              <img
-                src={missionBg}
-                alt="Card Image"
-                className="z-50 mx-10 sm:m-0"
-              />
+              <div className="main-image h-[500px] w-[600]">
+                <img
+                  src={missionBg}
+                  alt="Card Image"
+                  className="z-50 mx-10 sm:m-0 rounded-md h-[100%] object-cover"
+                />
+              </div>
               <img
                 src={about}
                 alt="Card Image"
-                className="absolute -bottom-10 -right-8 -z-50 sm:w-50"
+                className="absolute -bottom-10 -right-16 -z-50 sm:w-50"
               />
             </div>
           </div>
