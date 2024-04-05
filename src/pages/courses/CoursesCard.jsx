@@ -1,8 +1,8 @@
-import courseimg1 from "../assets/images/courseimg1.png";
-import courseimg2 from "../assets/images/courseimg2.png";
-import courseimg3 from "../assets/images/courseimg3.png";
+import courseimg1 from "../assets/images/rec1.jfif";
+import courseimg2 from "../assets/images/rec2.jfif";
+import courseimg3 from "../assets/images/rec3.jfif";
 
-export const CoursesCardData = [
+export const recommended_Courses_Data = [
   {
     image: courseimg1,
     title: "UI and Interactive Design",
