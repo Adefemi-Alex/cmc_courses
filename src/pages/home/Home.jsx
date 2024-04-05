@@ -21,7 +21,7 @@ import back from "../../assets/images/back.png";
 import background from "../../assets/images/background.png";
 import HomeImg2 from "../../assets/images/person2.png";
 import { cards } from "../../components/main/WhyUsData";
-// import CoursesCard from "./CoursesCard";
+import HomeTestimonial from "./HomeTestimonial";
 
 function Home() {
   return (
@@ -309,7 +309,7 @@ function Home() {
               Say About Us
             </h1>
           </div>
-          {/* <CoursesCard /> */}
+          <HomeTestimonial/>
         </div>
 
         {/* Learn and Earn section */}

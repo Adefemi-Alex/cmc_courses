@@ -1,17 +1,17 @@
 import React from "react";
-import './About.css';
+import "./About.css";
 
 import AboutSection1 from "../../components/about/About1";
 import AboutSection2 from "../../components/about/OurMission";
-import AboutSection3 from "../../components/about/OurVisions";
 import OurValues from "../../components/about/OurValues";
+import AboutSection3 from "../../components/about/OurVisions";
 import Testimonials from "../../components/about/Testimonials";
 import AskQuestions from "../../components/main/Questions";
 
 const About = () => {
   return (
     <>
-      <section className='py-10 gradient-background'>
+      <section className="py-10 gradient-background">
         <div className=" w-full items-center justify-center text-center">
           <h1 className="text-lg">About Us</h1>
           <span className="text-span text-fontSize1 sm:text-fontSize3">
@@ -23,7 +23,7 @@ const About = () => {
         <AboutSection3 />
         <OurValues />
         <Testimonials />
-        <AskQuestions/>
+        <AskQuestions />
       </section>
     </>
   );
