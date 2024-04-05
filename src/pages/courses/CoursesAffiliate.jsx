@@ -8,7 +8,10 @@ const CoursesAffiliate = () => {
           affliated courses
         </h1>
 
-        <div className="affiliate-container pt-8"></div>
+        <div className="affiliate-container pt-8 flex justify-between">
+          <div className="image-section">{/* #EAEAEA    for terminal*/}</div>
+          <div className="word-section"></div>
+        </div>
       </section>
     </>
   );

@@ -6,6 +6,7 @@ import coursBg1 from "../../assets/images/coursebg.png";
 import back from "../../assets/images/back.png";
 import CourseMission from "../../pages/courses/CourseMission";
 import FeaturedCourses from "../../pages/courses/FeaturedCourses";
+import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
 import { Link } from "react-router-dom";
 
 function Courses() {
@@ -23,6 +24,7 @@ function Courses() {
         </section>
         <CourseMission />
         <FeaturedCourses />
+        <CoursesAffiliate />
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
