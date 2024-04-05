@@ -19,7 +19,7 @@ const CourseMission = () => {
                   you can do with Expertskillz
                 </span>
               </h2>
-              <p className="text-[#696984] text-xl sm:text-sm font-normal font-poppins ">
+              <p className="text-[hsl(240,11%,46%)] text-xl sm:text-sm font-normal font-poppins ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. maiores
                 animi dicta quidem quod rerum ex facilis ullam dolor labore, ea
                 debitis incidunt quia ipsa vitae sapiente, iure sequi beatae?
@@ -27,11 +27,10 @@ const CourseMission = () => {
             </div>
 
             <div className="relative flex-1 mx-10 sm:my-10">
-              <img
-                src={about}
-                alt="Card Image"
-                className="absolute -top-11 -left-1 -z-50 sm:w-50 sm:-right-8"
-              />
+              <div
+                className="absolute -top-7 -left-1 -z-50 w-[118px] h-[120px] sm:-right-8
+               bg-[#0FD2D2] rounded-xl"
+              ></div>
               <div className="main-image h-[500px] w-[600]">
                 <img
                   src={missionBg}
@@ -39,11 +38,11 @@ const CourseMission = () => {
                   className="z-50 mx-10 sm:m-0 rounded-md h-[100%] object-cover"
                 />
               </div>
-              <img
-                src={about}
-                alt="Card Image"
-                className="absolute -bottom-10 -right-16 -z-50 sm:w-50"
-              />
+              {/* <img src={about} alt="Card Image" className="absolute  sm:w-50" /> */}
+              <div
+                className="absolute -bottom-10 -right-16 -z-50 w-[118px] h-[140px] sm:-right-8
+               bg-[#33FFA8] rounded-xl"
+              ></div>
             </div>
           </div>
         </div>
