@@ -5,13 +5,14 @@ import coursBg from "../../assets/images/cmcCourse.jpg";
 import coursBg1 from "../../assets/images/coursebg.png";
 import back from "../../assets/images/back.png";
 import CourseMission from "../../pages/courses/CourseMission";
+import FeaturedCourses from "../../pages/courses/FeaturedCourses";
 import { Link } from "react-router-dom";
 
 function Courses() {
   return (
     <>
       <div
-        className="font-nunito z-0 h-full w-full py-10"
+        className="font-nunito z-0 h-full w-full py-10 px-4"
         style={{ backgroundImage: `url(${back})` }}
       >
         <section className=" w-full items-center justify-center text-center">
@@ -21,6 +22,7 @@ function Courses() {
           </span>
         </section>
         <CourseMission />
+        <FeaturedCourses />
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
