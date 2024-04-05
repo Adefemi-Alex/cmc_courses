@@ -66,13 +66,6 @@ const Testimonials = () => {
 
   return (
     <section>
-      <div className="w-full items-center justify-center text-center mb-12">
-        <h1 className="text-fontSize1 sm:text-fontSize2">Testimonials</h1>
-        <span className="text-fontSize3 sm:text-fontSize4 sm:mx-1">
-          Join Thousands of Satisfied Learners Who Have Achieved Success With
-          ExpertSkillz. Hear What Our Users Have To Say About Us:
-        </span>
-      </div>
       <div className="items-center justify-center relative py-10">
         <img
           src={about2}
