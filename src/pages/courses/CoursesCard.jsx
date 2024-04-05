@@ -1,6 +1,6 @@
-import courseimg1 from "../assets/images/rec1.jfif";
-import courseimg2 from "../assets/images/rec2.jfif";
-import courseimg3 from "../assets/images/rec3.jfif";
+import courseimg1 from "../../assets/images/rec1.jfif";
+import courseimg2 from "../../assets/images/rec2.jfif";
+import courseimg3 from "../../assets/images/rec3.jfif";
 
 export const recommended_Courses_Data = [
   {
@@ -18,6 +18,26 @@ export const recommended_Courses_Data = [
   {
     image: courseimg3,
     title: "Designing Skills",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+];
+export const popular_Courses_Data = [
+  {
+    image: courseimg1,
+    title: "Affiliate Marketing",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: courseimg2,
+    title: "Facebook Advertising",
+    description:
+      "Discover our range of finance skills, including various investment skills like Crypto Trading, Forex Trading, Crypto Arbitrage, and more. In this class you’ll learn how to generate substantial income through these investment skills, all from the comfort of your home.",
+  },
+  {
+    image: courseimg3,
+    title: "Copywriting",
     description:
       "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
   },
