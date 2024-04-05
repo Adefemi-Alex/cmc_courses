@@ -11,7 +11,7 @@ const FeaturedCourses = () => {
           key={index}
           className={` ${
             index == switcher ? " w-10 background3" : "w-3"
-          } w-3 h-3 bg-[#D9D9D9] cursor-pointer rounded-full transition-all duration-700`}
+          }  h-3 bg-[#D9D9D9] cursor-pointer rounded-full transition-all duration-700`}
           onClick={() => {
             setSwitch(index);
           }}
