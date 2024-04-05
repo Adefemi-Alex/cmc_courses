@@ -1,7 +1,6 @@
 import React from "react";
 import missionBg from "../../assets/images/courses-main.jfif";
 // import aboutimg1 from "../../assets/images/about/about1.png";
-import about from "../../assets/images/about/about.svg";
 const CourseMission = () => {
   return (
     <>
