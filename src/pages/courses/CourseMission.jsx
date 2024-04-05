@@ -40,7 +40,7 @@ const CourseMission = () => {
               </div>
               {/* <img src={about} alt="Card Image" className="absolute  sm:w-50" /> */}
               <div
-                className="absolute -bottom-10 -right-16 -z-50 w-[118px] h-[140px] sm:-right-8
+                className="absolute bottom-2 -right-16 -z-50 w-[118px] h-[147px] sm:-right-8
                bg-[#33FFA8] rounded-xl"
               ></div>
             </div>
