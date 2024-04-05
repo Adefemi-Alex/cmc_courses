@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaStar, FaUser } from 'react-icons/fa'
 import { GiBookmarklet } from 'react-icons/gi'
-import coursBg from '../assets/images/cmcCourse.jpg'
-import coursBg1 from '../assets/images/coursebg.png'
+import coursBg from '../../assets/images/cmcCourse.jpg'
+import coursBg1 from '../../assets/images/coursebg.png'
 import { Link } from 'react-router-dom'
 
 function Courses() {
