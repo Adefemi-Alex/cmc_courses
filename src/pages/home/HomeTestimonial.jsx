@@ -41,13 +41,11 @@ const Testimonials = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    className: "center",
-    centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    afterChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    autoplaySpeed: 5000,
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
   const sliderRef = React.useRef(null);
@@ -67,14 +65,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="overflow-hidden">
-      <div className="w-full items-center justify-center text-center mb-12">
-        <h1 className="text-fontSize1 sm:text-fontSize2">Testimonials</h1>
-        <span className="text-fontSize3 sm:text-fontSize4 sm:mx-1">
-          Join Thousands of Satisfied Learners Who Have Achieved Success With
-          ExpertSkillz. Hear What Our Users Have To Say About Us:
-        </span>
-      </div>
+    <section>
       <div className="items-center justify-center relative py-10">
         <img
           src={about2}
@@ -93,7 +84,7 @@ const Testimonials = () => {
                 <img
                   src={about}
                   alt="Card Image"
-                  className="absolute -top-12 right-0 -z-50 sm:w-50 sm:-right-0"
+                  className="absolute -top-11 right-0 -z-50 sm:w-50 sm:-right-0"
                 />
                 <div className="bg-white justify-center items-center text-center mx-20 px-20 sm:m-5 sm:p-5 relative">
                   <h2 className="pt-10 text-fontSize2">{testimonial.name}</h2>
@@ -115,12 +106,12 @@ const Testimonials = () => {
                 <img
                   src={testimonial.personImage}
                   alt="card image"
-                  className="absolute -bottom-8 left-[320px] sm:w-50"
+                  className="absolute ml-[57vh] mt-[60px]"
                 />
                 <img
                   src={about}
                   alt="Card Image"
-                  className="absolute bottom-[100px] left-0 -z-50 sm:w-50"
+                  className="absolute bottom-[139px] left-0 -z-50 sm:w-50"
                 />
               </div>
             </div>
