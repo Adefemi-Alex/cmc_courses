@@ -13,7 +13,11 @@ const CourseMission = () => {
         <div>
           <div className="flex sm:flex-col tablet:flex-col justify-between px-10 py-20 sm:p-3 tracking-wide">
             <div className="flex-1 mx-10 sm:m-3 py-5">
-              <h2 className=" text-fontSize1 sm:text-fontSize3 text-[rgb(50,42,155)] font-bold mb-5 ">
+              <h2
+                className="relative text-fontSize1 sm:text-fontSize3 text-[#2F327D] font-bold mb-5  
+              before:w-[63px] before:h-[73px] before:bg-[#33FFA8] before:absolute 
+              before:top-0 before:left-0 before:rounded-full before:-z-10"
+              >
                 Everything you can do in physical classes,
                 <span className="text-[#2afbbc]">
                   you can do with Expertskillz
