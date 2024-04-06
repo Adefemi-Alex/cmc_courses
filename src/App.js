@@ -14,6 +14,7 @@ import {
 } from "./components/main/";
 import Courses from "./components/main/Courses";
 import Faq from "./components/main/Faq";
+import Affliate from "./pages/Affliate/Affliate";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/faqs" element={<Faq />} />
             <Route path="/about" element={<About />} />
+            <Route path="/affliate" element={<Affliate />} />
             <Route path="/getstarted" element={<SignUp />} />
           </Routes>
         </main>
