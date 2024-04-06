@@ -18,6 +18,8 @@ module.exports = {
         boxshadow: "5px 5px 30px rgba(0, 0, 0, 0.1)",
         background:
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(24,118,242,1) 100%)",
+        background3:
+          "linear-gradient(to right,rgba(26, 245, 223, 1),rgba(42, 251, 188, 1))",
       },
       fontSize: {
         larger: "3rem",
