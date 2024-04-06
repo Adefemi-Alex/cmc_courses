@@ -74,7 +74,7 @@ function Home() {
             <img
               src={HomeImg}
               alt="person"
-              className="w-[800px] h-[650px] object-fit"
+              className="w-[800px] h-[500px] object-fit"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@ function Home() {
               <img
                 src={HomeImg2}
                 alt="person"
-                className="w-[680px] h-[500px] object-fit"
+                className="w-[980px] h-[500px] object-fit"
               />
             </div>
             <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
