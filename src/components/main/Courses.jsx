@@ -13,7 +13,7 @@ function Courses() {
   return (
     <>
       <div
-        className="font-nunito z-0 h-full w-full py-10 px-4"
+        className="font-nunito z-0 h-full w-full py-10 px-4 bg-cover "
         style={{ backgroundImage: `url(${back})` }}
       >
         <section className=" w-full items-center justify-center text-center">

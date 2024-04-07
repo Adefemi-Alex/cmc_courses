@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { recommended_Courses_Data, popular_Courses_Data } from "./CoursesCard";
+import back from "../../assets/images/back.png";
 const FeaturedCourses = () => {
   const [switcher1, setSwitch1] = useState(0);
   const [switcher2, setSwitch2] = useState(0);
