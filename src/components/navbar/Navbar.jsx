@@ -138,6 +138,17 @@ function Navbar() {
               FAQ's
             </NavLink>
           </li>
+          <li className="text-gray-light">
+            <NavLink
+              to="/affliate"
+              className={({ isActive, isPending }) =>
+                isActive ? "active" : isPending ? "pending" : ""
+              }
+            >
+              Affliate
+            </NavLink>
+          </li>
+
         </ul>
         {/* login */}
         <div className="flex items-center text-lg lg:hidden gap-9">
