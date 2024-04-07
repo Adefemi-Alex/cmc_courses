@@ -21,13 +21,13 @@ const FeaturedCourses = () => {
   };
   return (
     <>
-      <div className="py-14 px-10">
+      <div className="py-4 px-10">
         <h1 className="text-black text-center capitalize text-fontSize1 sm:text-fontSize3">
           featured courses
         </h1>
 
         {/* Recommended Courses Section */}
-        <section className="Recommended py-16">
+        <section className="Recommended pt-16">
           <h1 className="text-black capitalize text-fontSize2 sm:text-fontSize3">
             recommended courses
           </h1>
@@ -79,7 +79,7 @@ const FeaturedCourses = () => {
         </section>
 
         {/* Popular courses Section */}
-        <section className="Popular py-16">
+        <section className="Popular pt-16">
           <h1 className="text-black capitalize text-fontSize2 sm:text-fontSize3">
             popular courses
           </h1>
