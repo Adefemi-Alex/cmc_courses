@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import { PrivacyAndPlicy, TermsAndCondPopup, Testimonial } from "../../components/main";
+import {
+  PrivacyAndPlicy,
+  TermsAndCondPopup,
+  Testimonial,
+} from "../../components/main";
 import logo4 from "../../assets/images/logo4.png";
 import TestimonialCarousel from "../home/TestimonialCard";
 import { NavLink } from "react-router-dom";
+import person1 from "../../assets/images/Testimonial1.png";
+import person2 from "../../assets/images/Testimonial2.png";
+import person3 from "../../assets/images/Testimonial3.png";
+import nextPerson from "../../assets/images/TestimonialNext.png";
 
 function Footer() {
   const date = new Date();
@@ -27,74 +35,138 @@ function Footer() {
 
   return (
     <>
-      <div className="font-nunito border border-black footer flex justify-around items-center w-full h-full">
-        {/* <div className="flex justify-around items-center"> */}
-        <div className="w-[100vh] mt-10">
-          {/* Footer about expertskillz */}
-          <div className="w-full">
-            <h1 className="text-5xl text-white">
-              What people are saying about{" "}
-              <span className="text-span">ExpertSkillz</span>
-            </h1>
-          </div>
-          <div className="w-full h-[30vh]">{/* <TestimonialCarousel /> */}</div>
+      <section>
+        <div className="footer justify-around items-center w-full h-full">
+          <div className="flex justify-center items-center p-20">
+            <div className="w-1/2 gap-5">
+              <div>
+                <h1 className="text-5xl font-semibold text-white">
+                  What People are Saying About{" "}
+                  <span className="text-span">ExpertSkillz</span>
+                </h1>
+              </div>
+              <div className="flex relative pt-10">
+                <span className="text-span text-[200px] absolute bottom-0 -left-5">
+                  “
+                </span>
+                <p className=" text-base font-bold text-white mt-20 mb-8 mr-40">
+                  ExpertSkillz has been a total game-changer for me in the
+                  online world! Their first course which is their flagship
+                  course on Affiliate Marketing “CMC” is top-notch. With the
+                  trainings I got on CMC, I have seen massive results in no time
+                  even as a newbie! Another thing is, the mentorship on CMC is
+                  super beginner-friendly.
+                </p>
+                <span className="text-span text-[200px] rotate-180 absolute right-44 top-14">
+                  “
+                </span>
+              </div>
+              <p className=" text-lg font-semibold text-white">
+                - Adejumo Eniola
+              </p>
+              <div className="flex gap-3 ">
+                <img
+                  src={person1}
+                  alt="card image"
+                  className=" w-20 h-20 sm:w-50"
+                />
+                <img
+                  src={person2}
+                  alt="card image"
+                  className="w-20 h-20 sm:w-50"
+                />
+                <img
+                  src={person3}
+                  alt="card image"
+                  className="w-20 h-20 sm:w-50"
+                />
+                <img
+                  src={nextPerson}
+                  alt="card image"
+                  className="w-20 h-20 sm:w-50"
+                />
+              </div>
+            </div>
+            <div className="rounded-xl sendMessage py-20 px-20 w-1/2">
+              <div className="flex flex-col gap-7">
+                <div className="flex justify-center text-white">
+                  <h1 className="text-2xl">Send a Message</h1>
+                </div>
+                {/* Email box */}
+                <div>
+                  <label htmlFor="email" className="text-white">
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    className="w-full h-10 bg-white placeholder-gray-200 border border-gray-300 px-3 rounded-md"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                {/* Message Box */}
+                <div>
+                  <label htmlFor="message" className="text-white">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    className="w-full h-20 bg-white placeholder-gray-200 border border-gray-300 px-3 py-2 rounded-md resize-none"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                {/* Submit Button */}
+                <button
+                  href="#"
+                  className="background3 text-black py-2 px-4 rounded hover:bg-gray-800"
+                >
+                  Send
+                </button>
+              </div>
+              {/* <div>
+                <h1>Company</h1>
 
-          {/* Second section */}
-          <div className="w-60">
-            <img src={logo4} alt="logo" />
-          </div>
-          <div className="text-white">
-            <p>Join Our Newsletter</p>
-          </div>
-          <div> </div>
-        </div>
-        {/* Message us section */}
-        <div className="block border border-none rounded-xl sendMessage py-10 px-10 mr-20 mt-20 w-[70vh]">
-          <div className="flex flex-col gap-7">
-            <div className="flex justify-center text-white">
-              <h1 className="text-2xl">Send a Message</h1>
+                <p>
+                  <NavLink to="">Home</NavLink>
+                </p>
+              </div> */}
             </div>
-            {/* Email box */}
-            <div>
-              <label htmlFor="email" className="text-white">
-                Email
-              </label>
-              <input
-                type="text"
-                id="email"
-                className="w-full h-10 bg-white placeholder-gray-200 border border-gray-300 px-3 rounded-md"
-                placeholder="Enter your email"
-              />
-            </div>
-            {/* Message Box */}
-            <div>
-              <label htmlFor="message" className="text-white">
-                Message
-              </label>
-              <textarea
-                id="message"
-                className="w-full h-20 bg-white placeholder-gray-200 border border-gray-300 px-3 py-2 rounded-md resize-none"
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-            {/* Submit Button */}
-            <button
-              href="#"
-              className="background3 text-white py-2 px-4 rounded hover:bg-gray-800"
-            >
-              Send
-            </button>
           </div>
-        <div>
-          <h1>Company</h1>
 
-          <p>
-            <NavLink to="">Home</NavLink>
-          </p>
+          <div className="flex justify-around items-center">
+            <div className="flex flex-col gap-3">
+              <div className="w-60">
+                <img src={logo4} alt="logo" />
+              </div>
+              <div className="text-white">
+                <p>Join Our Newsletter</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter your email here"
+                  className="border-2 border-[#A6A6A6] rounded-full pl-5 pr-28 py-3 bg-transparent"
+                  
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-[100vh] mt-10">
+            {/* Footer about expertskillz */}
+            <div className="w-full"></div>
+            <div className="w-full h-[30vh]">
+              {/* <TestimonialCarousel /> */}
+            </div>
+
+            {/* Second section */}
+
+            <div> </div>
+          </div>
+          {/* Message us section */}
+
+          {/* </div> */}
         </div>
-        </div>
-        {/* </div> */}
-      </div>
+      </section>
     </>
   );
 }
