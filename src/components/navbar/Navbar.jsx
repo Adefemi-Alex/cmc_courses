@@ -15,8 +15,8 @@ import { toast } from "react-toastify";
 import avatar from "../../assets/images/avatar.png";
 import logo from "../../assets/images/logo2.png";
 import { auth } from "../firebase/config";
-import "../main/index";
 import Loader from "../main/Loader";
+import "../main/index";
 
 import back from "../../assets/images/back.png";
 import { ShowOnLogin, ShowOnLogout } from "../main/HiddenLink";
@@ -130,7 +130,7 @@ function Navbar() {
 
           <li className="text-gray-light">
             <NavLink
-              to="/faq"
+              to="/faqs"
               className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : ""
               }
@@ -148,7 +148,6 @@ function Navbar() {
               Affliate
             </NavLink>
           </li>
-
         </ul>
         {/* login */}
         <div className="flex items-center text-lg lg:hidden gap-9">

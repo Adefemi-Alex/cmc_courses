@@ -6,10 +6,11 @@ import HomeLine from "../../assets/images/HomeLine.png";
 import back from "../../assets/images/back.png";
 import AboutUs from "./AboutUs";
 import GetCourses from "./GetCourses";
+import HomeAffliate from "./HomeAffliate";
+import HomeFaqs from "./HomeFaqs";
+import HowItWorks from "./HowItWorks";
 import StudentsRemark from "./StudentsRemark";
 import WhyChooseUs from "./WhyChooseUs";
-import HomeAffliate from "./HomeAffliate";
-import HowItWorks from "./HowItWorks";
 
 function Home() {
   return (
@@ -72,6 +73,7 @@ function Home() {
         <StudentsRemark />
         <HomeAffliate />
         <HowItWorks />
+        <HomeFaqs />
       </div>
     </>
   );
