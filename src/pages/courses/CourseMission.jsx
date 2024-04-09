@@ -4,7 +4,7 @@ import missionBg from "../../assets/images/courses-main.jfif";
 const CourseMission = () => {
   return (
     <>
-      <section className="mission-container py-20">
+      <section className="mission-container pt-20">
         <h1 className="text-black text-center capitalize text-fontSize1 sm:text-fontSize3">
           our missions
         </h1>
@@ -18,7 +18,7 @@ const CourseMission = () => {
               before:top-0 before:left-0 before:rounded-full before:-z-10"
               >
                 Everything you can do in physical classes,
-                <span className="text-[#2afbbc]">
+                <span className="text-[#2afbbc] ml-2">
                   you can do with Expertskillz
                 </span>
               </h2>
@@ -31,7 +31,7 @@ const CourseMission = () => {
 
             <div className="relative flex-1 mx-10 sm:my-10 tablet:mt-5">
               <div
-                className="absolute -top-7 -left-1 -z-50 w-[118px] h-[120px] sm:-right-8
+                className="absolute -top-4 left-6 -z-50 w-[118px] h-[120px] sm:-right-8
                bg-[#0FD2D2] rounded-xl"
               ></div>
               <div className="main-image h-[500px] w-[600]">
@@ -43,7 +43,7 @@ const CourseMission = () => {
               </div>
               {/* <img src={about} alt="Card Image" className="absolute  sm:w-50" /> */}
               <div
-                className="absolute -bottom-8  -right-16 -z-50 w-[118px] h-[147px] sm:-right-8
+                className="absolute -bottom-3  -right-14 -z-50 w-[118px] h-[147px] sm:-right-8
                bg-[#33FFA8] rounded-xl"
               ></div>
             </div>

@@ -7,13 +7,14 @@ import back from "../../assets/images/back.png";
 import CourseMission from "../../pages/courses/CourseMission";
 import FeaturedCourses from "../../pages/courses/FeaturedCourses";
 import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
+import CoursesChoice from "../../pages/courses/CoursesChoice";
 import { Link } from "react-router-dom";
 
 function Courses() {
   return (
     <>
       <div
-        className="font-nunito z-0 h-full w-full py-10 px-4"
+        className="font-nunito z-0 h-full w-full pt-10  bg-cover "
         style={{ backgroundImage: `url(${back})` }}
       >
         <section className=" w-full items-center justify-center text-center">
@@ -25,6 +26,7 @@ function Courses() {
         <CourseMission />
         <FeaturedCourses />
         <CoursesAffiliate />
+        <CoursesChoice />
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
