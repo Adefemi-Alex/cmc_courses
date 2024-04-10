@@ -8,6 +8,7 @@ import CourseMission from "../../pages/courses/CourseMission";
 import FeaturedCourses from "../../pages/courses/FeaturedCourses";
 import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
 import CoursesChoice from "../../pages/courses/CoursesChoice";
+import CoursesFaq from "../../pages/courses/CoursesFaq";
 import { Link } from "react-router-dom";
 
 function Courses() {
@@ -27,6 +28,7 @@ function Courses() {
         <FeaturedCourses />
         <CoursesAffiliate />
         <CoursesChoice />
+        <CoursesFaq />
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
