@@ -7,6 +7,8 @@ const CoursesFaq = () => {
         <h1 className="text-black text-center capitalize text-fontSize1 sm:text-fontSize3">
           Frequently Asked Questions (FAQs):
         </h1>
+
+        <div className="faq-inner  bg-[#F7F7FB] mt-24 w-full h-[600px] p-6"></div>
       </div>
     </>
   );
