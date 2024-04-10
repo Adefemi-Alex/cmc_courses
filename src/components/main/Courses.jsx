@@ -9,6 +9,9 @@ import FeaturedCourses from "../../pages/courses/FeaturedCourses";
 import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
 import CoursesChoice from "../../pages/courses/CoursesChoice";
 import CoursesFaq from "../../pages/courses/CoursesFaq";
+import Questions from "./Questions";
+import Testimonials from "../about/Testimonials";
+
 import { Link } from "react-router-dom";
 
 function Courses() {
@@ -27,10 +30,16 @@ function Courses() {
         <CourseMission />
         <FeaturedCourses />
         <CoursesAffiliate />
-        <CoursesChoice />
-        <CoursesFaq />
+        <div style={{ backgroundImage: `url(${back})` }}>
+          <CoursesChoice />
+          <CoursesFaq />
+          <Questions />
+          <Testimonials />
+        </div>
+
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
+        </div>
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
             Our Affiliate Course
           </h3>
