@@ -34,8 +34,8 @@ const CoursesFaq = () => {
               >
                 <h2>{question}</h2>
                 <div
-                  className={`arrow p-2 background3 text-white rounded-full transition-all duration-500 ease-in-out   ${
-                    openStates[index] ? "rotate-90" : ""
+                  className={`arrow p-2  text-[#33FFA8] shadow-lg rounded-full transition-all duration-500 ease-in-out   ${
+                    openStates[index] ? "rotate-90 background3 text-white" : ""
                   }`}
                 >
                   <IoIosArrowForward size={25} className="cursor-pointer" />
