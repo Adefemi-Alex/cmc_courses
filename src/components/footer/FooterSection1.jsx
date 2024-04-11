@@ -1,4 +1,5 @@
 import React from "react";
+import { FaChevronRight } from "react-icons/fa";
 import person1 from "../../assets/images/Testimonial1.png";
 import person2 from "../../assets/images/Testimonial2.png";
 import person3 from "../../assets/images/Testimonial3.png";
@@ -43,7 +44,7 @@ const FooterSection1 = () => {
           />
         </div>
         {/* Email section */}
-        <div className="flex flex-col gap-3 justify-around items-center ml-6 mt-20">
+        <div className="flex flex-col gap-3 justify-around items-center mt-20">
           <div className="w-60 -ml-96 mt-5">
             <img src={logo4} alt="logo" />
           </div>
@@ -54,10 +55,14 @@ const FooterSection1 = () => {
             <input
               type="text"
               placeholder="Enter your email here"
-              className="border-2 border-[#A6A6A6] rounded-full pl-5 pr-28 py-3 bg-transparent"
+              className="border-2 border-white text-white rounded-full pl-5 pr-28 py-3 bg-transparent"
             />
+            <button type="submit" className="absolute text-white text-fontSize2 cursor-pointer border border-background3 background3 rounded-full p-3 -ml-[51px] mt-0.5">
+              <FaChevronRight />
+            </button>
+
           </div>
-          <div className="mt-16 text-white">
+          <div className="mt-20 -ml-[250px] text-white">
             <p>Copyright © 2024 ExpertSkillz. All right reserved.</p>
           </div>
         </div>

@@ -67,7 +67,7 @@ const GetCourses = () => {
           online skills and model. Choose the one that best suits your interest
           and financial goals.
         </p>
-        <section className="Recommended py-16">
+        <section className="Recommended py-16 px-20">
           <div className="grid grid-cols-3 tablet:grid-cols-2 gap-8 sm:flex sm:flex-col mt-14  ">
             {recommended_Courses_Data.map(
               ({ image, title, description }, index) => {

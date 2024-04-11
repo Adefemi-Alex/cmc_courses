@@ -7,27 +7,26 @@ const HowItWorks = () => {
   return (
     <>
       {/* How it works */}
-
-      <div className="-mt-20 z-0 w-full">
+      <div className="z-0 w-full bg-white">
         {/* Arrow and the spiral background image section */}
         <div className="flex justify-between mb-2">
-          <div className="ml-30 mt-40  w-full h-full">
+          <div className="ml-30 mt-3  w-full h-full">
             <img
               src={ChooseLine}
               alt="line"
-              className="ml-[57%] mt-[6px] w-[200px] h-full object-cover"
+              className="ml-[57%] w-[200px] h-full object-cover"
             />
           </div>
           {/* Centered image */}
           <div className="w-[650px]">
-            <img src={background} alt="line" className="w-full object-cover" />
+            <img src={background} alt="line" className="w-full -mt-10 z-0 object-cover" />
           </div>
         </div>
         {/* Header section */}
-        <div className="flex justify-center items-center -mt-60">
+        <div className="flex justify-center items-center -mt-80">
           <h1 className="ml-8 text-4xl lg:text-5xl xl:text-6xl relative">
             Here's How It{" "}
-            <span className="relative inline-block w-[170px]">
+            <span className="relative inline-block w-[130px]">
               Works
               <img
                 src={vector}

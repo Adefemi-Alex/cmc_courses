@@ -27,7 +27,7 @@ function Footer() {
   return (
     <>
       <section>
-        <div className="footer flex justify-around items-center w-full h-full">
+        <div className="font-nunito footer flex justify-around items-center w-full h-full">
           <FooterSection1 />
           <FooterSection2 />
         </div>

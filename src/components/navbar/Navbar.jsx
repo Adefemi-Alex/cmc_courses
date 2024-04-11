@@ -78,7 +78,7 @@ function Navbar() {
     <>
       {isLoading && <Loader />}
       <nav
-        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
+        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8"
         style={{ backgroundImage: `url(${back})` }}
 
         // className={`bg-white flex items-center justify-between px-[3.5rem] py-5 w-full fixed top-0 transition-all z-40 ${

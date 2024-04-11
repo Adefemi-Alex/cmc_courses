@@ -17,7 +17,6 @@ const HomeFaqs = () => {
       {/* Faqs */}
       <div
         className="-mt-20 z-0 w-full"
-        // style={{ backgroundImage: `url(${back})` }}
       >
         {/* Arrow and the spiral background image section */}
         <div className="flex justify-between mb-2">
@@ -37,12 +36,12 @@ const HomeFaqs = () => {
         <div className="flex justify-center items-center -mt-60">
           <h1 className="ml-8 text-4xl lg:text-5xl xl:text-6xl relative">
             Frequently Asked{" "}
-            <span className="relative inline-block w-[170px]">
+            <span className="relative inline-block w-[190px]">
               Questions
               <img
                 src={vector}
                 alt="line"
-                className="absolute top-1/3 transform -translate-y-1/2 right-3 z-0 h-[70px] w-[400px]"
+                className="absolute top-2/3 transform -translate-y-1/2 right-2 z-0 h-[75px] w-[400px]"
               />
             </span>
           </h1>
