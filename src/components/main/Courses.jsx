@@ -7,13 +7,18 @@ import back from "../../assets/images/back.png";
 import CourseMission from "../../pages/courses/CourseMission";
 import FeaturedCourses from "../../pages/courses/FeaturedCourses";
 import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
+import CoursesChoice from "../../pages/courses/CoursesChoice";
+import CoursesFaq from "../../pages/courses/CoursesFaq";
+import Questions from "./Questions";
+import Testimonials from "../about/Testimonials";
+
 import { Link } from "react-router-dom";
 
 function Courses() {
   return (
     <>
       <div
-        className="font-nunito z-0 h-full w-full py-10 px-4"
+        className="font-nunito z-0 h-full w-full pt-10  bg-cover "
         style={{ backgroundImage: `url(${back})` }}
       >
         <section className=" w-full items-center justify-center text-center">
@@ -25,8 +30,16 @@ function Courses() {
         <CourseMission />
         <FeaturedCourses />
         <CoursesAffiliate />
+        <div style={{ backgroundImage: `url(${back})` }}>
+          <CoursesChoice />
+          <CoursesFaq />
+          <Questions />
+          <Testimonials />
+        </div>
+
         {/* <div className="my-16 px-4"> */}
         {/* <div className="course-head mt-8">
+        </div>
           <h3 className="text-lightBlue font-bold text-fontSize2 md:text-center">
             Our Affiliate Course
           </h3>
