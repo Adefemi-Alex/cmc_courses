@@ -102,9 +102,6 @@ const CoursesAffiliate = () => {
                 <HiUsers size={35} className="" />
               </div>
             </div>
-            <div className="curve absolute w-[300px] -bottom-7 right-[-20rem]">
-              <img src={curve} alt="curve" className="w-[100%] rotate-12" />
-            </div>
 
             {/* AFFILIATE END */}
           </div>
