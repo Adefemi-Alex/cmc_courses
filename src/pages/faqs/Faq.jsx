@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {IoMdSearch, IoIosArrowForward } from "react-icons/io";
+import React, { useEffect, useState } from "react";
+import { IoIosArrowForward, IoMdSearch } from "react-icons/io";
 import back from "../../assets/images/back.png";
 import { data } from "./faqdata";
 
@@ -9,12 +9,12 @@ const Faq = () => {
   const [expanded, setExpanded] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredQuestions, setFilteredQuestions] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
     setFilteredQuestions(data.slice(0, 4));
   }, []);
 
-  
   const toggleOpen = (index) => {
     const newOpenStates = Array(data.length).fill(false);
     newOpenStates[index] = true;
@@ -28,37 +28,37 @@ const Faq = () => {
   const handleInputChange = (event) => {
     const query = event.target.value;
     setSearchQuery(query);
-
-
+    setShowDropdown(query !== "");
     const filtered = data.filter((faq) =>
-    faq.question.toLowerCase().includes(query.toLowerCase())
-  );
-  setFilteredQuestions(filtered);
-};
+      faq.question.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredQuestions(filtered);
+  };
 
-const handleShowMore = () => {
-  setFilteredQuestions(data);
-  setExpanded(true);
-};
+  const handleShowMore = () => {
+    setFilteredQuestions(data);
+    setExpanded(true);
+  };
 
-const handleShowLess = () => {
-  setFilteredQuestions(data.slice(0, 4));
-  setExpanded(false);
-};
+  const handleShowLess = () => {
+    setFilteredQuestions(data.slice(0, 4));
+    setExpanded(false);
+  };
 
-const handleClickQuestion = (question) => {
-  setSearchQuery(question);
-  const index = data.findIndex((faq) => faq.question === question);
-  if (index !== -1) {
-    const newOpenStates = Array(data.length).fill(false);
-    newOpenStates[index] = true;
-    setOpenStates(newOpenStates);
-  }
-};
+  const handleClickQuestion = (question) => {
+    setSearchQuery(question);
+    const index = data.findIndex((faq) => faq.question === question);
+    if (index !== -1) {
+      const newOpenStates = Array(data.length).fill(false);
+      newOpenStates[index] = true;
+      setOpenStates(newOpenStates);
+    }
+    setShowDropdown(false);
+  };
 
   return (
     <div className="p-5" style={{ backgroundImage: `url(${back})` }}>
-      <section className=" w-full items-center justify-center text-center">
+      <section className="w-full items-center justify-center text-center">
         <h1 className="text-lg">FAQs</h1>
         <span className="text-span text-fontSize1 sm:text-fontSize3">
           Ask us anything
@@ -68,7 +68,6 @@ const handleClickQuestion = (question) => {
         </h1>
       </section>
 
-      
       <div className="relative mx-auto mt-4 w-64">
         <input
           type="text"
@@ -78,7 +77,7 @@ const handleClickQuestion = (question) => {
           className="p-2 pl-10 border border-gray-300 rounded-xl w-full"
         />
         <IoMdSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-        {searchQuery && (
+        {showDropdown && (
           <div className="absolute z-10 bg-white w-full border border-gray-300 rounded-md mt-1">
             {filteredQuestions.map((faq, index) => (
               <div
@@ -93,39 +92,36 @@ const handleClickQuestion = (question) => {
         )}
       </div>
 
-      <div
-        className="faq-inner mt-24 py-16 px-8 flex justify-center items-center 
-        flex-col space-y-8"
-      >
+      <div className="faq-inner mt-24 py-16 px-8 flex justify-center items-center flex-col space-y-8">
         {filteredQuestions.map(({ id, question, answer }, index) => (
-            <div className="faq-each bg-white text-black w-[896px] max-w-[80%] h-auto p-11 rounded-2xl">
+          <div className="faq-each bg-white text-black w-[896px] max-w-[80%] h-auto p-11 rounded-2xl">
+            <div
+              className="question-section flex justify-between items-center"
+              key={id}
+              onClick={() => toggleOpen(index)}
+            >
+              <h2>{question}</h2>
               <div
-                className="question-section flex justify-between items-center"
-                key={id}
-                onClick={() => toggleOpen(index)}
-              >
-                <h2>{question}</h2>
-                <div
-                  className={`arrow p-2  text-[#33FFA8] shadow-lg rounded-full transition-all duration-500 ease-in-out   ${
-                    openStates[index] ? "rotate-90 background3 text-white" : ""
-                  }`}
-                >
-                  <IoIosArrowForward size={25} className="cursor-pointer" />
-                </div>
-              </div>
-              <div
-                className={`mt-4 transition-all duration-500 ease-in-out  ${
-                  openStates[index] ? "opacity-1 h-full" : "h-0 opacity-0"
+                className={`arrow p-2 text-[#33FFA8] shadow-lg rounded-full transition-all duration-500 ease-in-out ${
+                  openStates[index] ? "rotate-90 background3 text-white" : ""
                 }`}
               >
-                <p
-                  className={` text-[#6F6C90] ${
-                    moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
-                  } `}
-                >
-                  {answer}
-                </p>
-                {/* <span
+                <IoIosArrowForward size={25} className="cursor-pointer" />
+              </div>
+            </div>
+            <div
+              className={`mt-4 transition-all duration-500 ease-in-out ${
+                openStates[index] ? "opacity-1 h-full" : "h-0 opacity-0"
+              }`}
+            >
+              <p
+                className={`text-[#6F6C90] ${
+                  moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
+                } `}
+              >
+                {answer}
+              </p>
+              {/* <span
                   className="cursor-pointer"
                   onClick={() => {
                     toggleInfo(index);
@@ -133,9 +129,9 @@ const handleClickQuestion = (question) => {
                 >
                   {moreInfo[index] ? "See less" : "See more"}
                 </span> */}
-              </div>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
 
       {!expanded ? (
