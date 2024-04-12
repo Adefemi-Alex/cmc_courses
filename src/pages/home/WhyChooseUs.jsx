@@ -8,17 +8,15 @@ const WhyChooseUs = () => {
   return (
     <>
       {/* Why choose us */}
-      <div className="-mt-48 z-0 grid grid-cols-2 sm:grid-cols-1 sm:w-[767px] md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+      <div className="-mt-20 z-0 ">
         {/* Arrow and the spiral background image section */}
-        <div>
-
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-0">
           <div className="ml-30 mt-40  w-full h-full">
             <img
               src={ChooseLine}
               alt="line"
               className="ml-[57%] mt-[6px] w-[200px] h-full object-cover"
-              />
+            />
           </div>
           {/* Centered image */}
           <div className="w-[650px]">
@@ -27,7 +25,7 @@ const WhyChooseUs = () => {
         </div>
         {/* Header section */}
         <div className="flex justify-center items-center -mt-60">
-          <h1 className="ml-10 text-4xl sm:text-2xl lg:text-5xl xl:text-6xl relative">
+          <h1 className="ml-10 text-4xl lg:text-5xl xl:text-6xl relative">
             Why Choose{" "}
             <span className="relative inline-block w-20">
               Us?
@@ -35,16 +33,14 @@ const WhyChooseUs = () => {
                 src={vector2}
                 alt="line"
                 className="absolute top-1/3 transform -translate-y-1/2 right-2 z-0 h-15 w-[100px]"
-                />
+              />
             </span>
           </h1>
         </div>
         <p className="mt-7 flex justify-center items-center ml-10">
           Experience boundless opportunities at your fingertips
-          with ExpertSkillz.
+          with ExpertSkillz.
         </p>
-                </div>
-      </div>
         {/* Card Section */}
         <div className="grid grid-cols-4 gap-4 mx-20 my-10">
           {cards.map((cards, index) => (
@@ -68,6 +64,7 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
+      </div>
     </>
   );
 };

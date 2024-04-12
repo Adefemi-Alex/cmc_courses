@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { data } from "../../faqdata";
 import { IoIosArrowForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
+import { data } from ".././faqs/faqdata";
 const CoursesFaq = () => {
   const [openStates, setOpenStates] = useState(Array(data.length).fill(false));
   const [moreInfo, setMoreInfo] = useState(Array(data.length).fill(false));
@@ -54,24 +54,31 @@ const CoursesFaq = () => {
                 >
                   {answer}
                 </p>
-                <span
+                {/* <span
                   className="cursor-pointer"
                   onClick={() => {
                     toggleInfo(index);
                   }}
                 >
                   {moreInfo[index] ? "See less" : "See more"}
-                </span>
+                </span> */}
               </div>
             </div>
           ))}
+        </div>
 
-          <Link to="/faqs">
+        <div className="flex justify-center w-full">
+          <NavLink to="/faqs">
+            <button className="background3 hover:background text-black w-[200px] font-bold py-2 px-4 rounded-full">
+              See More
+            </button>
+          </NavLink>
+        </div>
+        {/* <Link to="/faqs">
             <p className="text-black font-bold text-lg background4 rounded-3xl border-[1px] border-solid border-black px-8 py-2">
               See more
             </p>
-          </Link>
-        </div>
+          </Link> */}
       </div>
     </>
   );
