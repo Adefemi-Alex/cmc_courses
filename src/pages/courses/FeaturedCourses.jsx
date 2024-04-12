@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { recommended_Courses_Data, popular_Courses_Data } from "./CoursesCard";
-import back from "../../assets/images/back.png";
+// import back from "../../assets/images/back.png";
 const FeaturedCourses = () => {
-  const [switcher1, setSwitch1] = useState(0);
-  const [switcher2, setSwitch2] = useState(0);
+  const [switcher, setSwitch] = useState(0);
 
   const generateSwitch = (setSwitch, switcher) => {
     return Array.from({ length: 3 }).map((_, index) => {
@@ -11,7 +10,7 @@ const FeaturedCourses = () => {
         <div
           key={index}
           className={` ${
-            index == switcher ? " w-10 background3" : "w-3"
+            index === switcher ? " w-10 background3" : "w-3"
           }  h-3 bg-[#D9D9D9] cursor-pointer rounded-full transition-all duration-700`}
           onClick={() => {
             setSwitch(index);
@@ -39,43 +38,27 @@ const FeaturedCourses = () => {
                 return (
                   <div
                     key={index}
-                    className={`shadow-2xl rounded-lg bg-white transition-all duration-700 cursor-pointer hover:scale-[1.05] ${
-                      index == switcher1 ? "background3" : "bg-white"
-                    }`}
-                    onClick={() => {
-                      setSwitch1(index);
-                    }}
+                    className="shadow-2xl rounded-lg bg-white transition-all duration-700 cursor-pointer hover:scale-[1.05]"
                   >
-                    <div className="py-6 px-2">
-                      <div className="w-full h-full">
-                        <img
-                          src={image}
-                          alt={title}
-                          className="w-full h-auto rounded-lg  hover:mb-3 transition-all object-cover"
-                        />
-                      </div>
-                      <h3
-                        className={`mt-4 mb-2 rounded-lg py-2 px-4 w-fit text-base font-normal
-                        ${
-                          index == switcher1 ? "bg-white" : "background3"
-                        } " bg-white transition-all duration-700`}
-                      >
+                    <div className="">
+                      <img
+                        src={image}
+                        alt={title}
+                        className="w-full h-auto  hover:mb-3 transition-all object-cover"
+                      />
+                    </div>
+                    <div className="inner py-3 pl-6">
+                      <h3 className="mt-4 mb-2 background3 rounded-lg py-2 px-4 w-fit text-base font-normal">
                         {title}
                       </h3>
-                      <p className="text-sm text-[#4F4E55] font-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nam mollitia optio delectus libero iste nostrum quos
-                        quaerat qui, voluptatibus ea.
-                        {/* {description} */}{" "}
+                      <p className="text-sm text-[#11F1F1] font-normal mt-3">
+                        Upcoming
                       </p>
                     </div>
                   </div>
                 );
               }
             )}
-          </div>
-          <div className="pickers flex justify-center gap-2 mt-10">
-            {generateSwitch(setSwitch1, switcher1)}
           </div>
         </section>
 
@@ -92,10 +75,10 @@ const FeaturedCourses = () => {
                   <div
                     key={index}
                     className={`shadow-2xl rounded-lg bg-white transition-all duration-700 cursor-pointer hover:scale-[1.05] ${
-                      index == switcher2 ? "background3" : "bg-white"
+                      index === switcher ? "background3" : "bg-white"
                     }`}
                     onClick={() => {
-                      setSwitch2(index);
+                      setSwitch(index);
                     }}
                   >
                     <div className="py-6 px-2">
@@ -109,7 +92,7 @@ const FeaturedCourses = () => {
                       <h3
                         className={`mt-4 mb-2 rounded-lg py-2 px-4 w-fit text-base font-normal
                         ${
-                          index == switcher2 ? "bg-white" : "background3"
+                          index === switcher ? "bg-white" : "background3"
                         } " bg-white transition-all duration-700`}
                       >
                         {title}
@@ -127,7 +110,7 @@ const FeaturedCourses = () => {
             )}
           </div>
           <div className="pickers flex justify-center gap-2 mt-10">
-            {generateSwitch(setSwitch2, switcher2)}
+            {generateSwitch(setSwitch, switcher)}
           </div>
         </section>
       </div>
