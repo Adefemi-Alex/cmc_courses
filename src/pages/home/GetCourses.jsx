@@ -7,7 +7,6 @@ import { recommended_Courses_Data } from "../courses/CoursesCard";
 
 const GetCourses = () => {
   const [switcher1, setSwitch1] = useState(0);
-  const [switcher2, setSwitch2] = useState(0);
 
   const generateSwitch = (setSwitch, switcher) => {
     return Array.from({ length: 3 }).map((_, index) => {
@@ -67,10 +66,11 @@ const GetCourses = () => {
           online skills and model. Choose the one that best suits your interest
           and financial goals.
         </p>
-        <section className="Recommended py-16">
+        <section className="Recommended py-16 px-20">
           <div className="grid grid-cols-3 tablet:grid-cols-2 gap-8 sm:flex sm:flex-col mt-14  ">
-            {recommended_Courses_Data.map(
-              ({ image, title, description }, index) => {
+            {recommended_Courses_Data
+              .slice(0, 3)
+              .map(({ image, title, description }, index) => {
                 return (
                   <div
                     key={index}
@@ -106,8 +106,7 @@ const GetCourses = () => {
                     </div>
                   </div>
                 );
-              }
-            )}
+              })}
           </div>
           <div className="pickers flex justify-center gap-2 mt-10">
             {generateSwitch(setSwitch1, switcher1)}

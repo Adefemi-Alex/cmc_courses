@@ -2,6 +2,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
 }
 
 .text-black {
@@ -27,5 +28,6 @@ span.text-span {
     background-clip: text;
     color: transparent;
 }
+
 
 

@@ -10,17 +10,15 @@ const HomeAffliate = () => {
     <>
       {/* Learn and Earn Affliate section */}
 
-      <div
-        className="-mt-14"
-        // style={{ backgroundImage: `url(${back})` }}
+      <section className="z-50"
       >
         {/* Arrow and the spiral background image section */}
-        <div className="flex justify-between mb-0">
-          <div className="ml-30 mt-40  w-full h-full">
+        <div className="flex justify-between">
+          <div className="ml-30 w-full h-full">
             <img
               src={ChooseLine}
               alt="line"
-              className="ml-[57%] mt-[6px] w-[200px] h-full object-fit"
+              className="ml-[57%] w-[200px] h-full object-fit"
             />
           </div>
           {/* Centered image */}
@@ -31,23 +29,23 @@ const HomeAffliate = () => {
 
         {/* About Header section */}
 
-        <div className="flex justify-center items-center -mt-60 w-full h-full">
+        <div className="flex justify-center items-center -mt-[410px] w-full h-full">
           {/* <div className="ml-10 text-4xl lg:text-5xl xl:text-6xl"> */}
-          <h1 className="ml-10 text-4xl lg:text-5xl xl:text-6xl relative">
-            Learn{" "}
-            <span className="relative inline-block w-20">
+          <h1 className="ml-10 text-4xl lg:text-5xl xl:text-6xl">
+            Learn and{" "}
+            <span className="relative inline-block w-40">
               Earn
               <img
                 src={vector2}
                 alt="line"
-                className="absolute top-1/3 transform -translate-y-1/2 right-2 z-0 h-15 w-[100px]"
+                className="absolute top-1/3 transform -translate-y-1/2 right-20 z-0 h-15 w-[90px]"
               />
             </span>
           </h1>
           {/* </div> */}
         </div>
         {/* Learn and Earn body */}
-        <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
+        <div className="flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
           <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
             <div className="mt-36">
               <h1 className="font-nunito font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
@@ -81,7 +79,7 @@ const HomeAffliate = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
