@@ -1,5 +1,6 @@
 import React from "react";
 import Affliate1 from "../../components/affliate/Affliate1";
+import HowItWorks from "../../components/affliate/HowItWorks";
 
 const Affliate = () => {
   return (
@@ -9,6 +10,7 @@ const Affliate = () => {
           <h1 className="text-lg">AFFLIATE</h1>
         </div>
         <Affliate1/>
+        <HowItWorks/>
       </section>
     </>
   );
