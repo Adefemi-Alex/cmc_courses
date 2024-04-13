@@ -130,7 +130,7 @@ function Navbar() {
 
           <li className="text-gray-light">
             <NavLink
-              to="/faq"
+              to="/faqs"
               className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : ""
               }
