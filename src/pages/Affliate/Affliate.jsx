@@ -2,6 +2,7 @@ import React from "react";
 import Affliate1 from "../../components/affliate/Affliate1";
 import HowItWorks from "../../components/affliate/HowItWorks";
 import TopAffliates from "../../components/affliate/TopAffliates";
+import Affliate2 from "../../components/affliate/Affliate2";
 
 const Affliate = () => {
   return (
@@ -13,6 +14,7 @@ const Affliate = () => {
         <Affliate1/>
         <HowItWorks/>
         <TopAffliates/>
+        <Affliate2/>
       </section>
     </>
   );
