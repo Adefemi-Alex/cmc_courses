@@ -7,9 +7,9 @@ import "../../pages/about/About.css";
 import person1 from "../../assets/images/Testimonial1.png";
 import person2 from "../../assets/images/Testimonial2.png";
 import person3 from "../../assets/images/Testimonial3.png";
-import about from "../../assets/images/about/decorative_images/decorativeImage.svg";
-import about1 from "../../assets/images/about/decorative_images/decorativeImage2.svg";
-import about2 from "../../assets/images/about/decorative_images/decorativeImage3.svg";
+import about from "../../assets/images/decorative_images/decorativeImage.svg";
+import about1 from "../../assets/images/decorative_images/decorativeImage2.svg";
+import about2 from "../../assets/images/decorative_images/decorativeImage3.svg";
 import prevImage from "../../assets/images/leftArrow.png";
 import nextImage from "../../assets/images/rightArrow.png";
 

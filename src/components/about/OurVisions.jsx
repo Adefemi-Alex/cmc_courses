@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutimg3 from "../../assets/images/about/about3.png";
-import about from "../../assets/images/about/decorative_images/decorativeImage.svg";
+import about from "../../assets/images/decorative_images/decorativeImage.svg";
 
 const About_3 = () => {
     return (
