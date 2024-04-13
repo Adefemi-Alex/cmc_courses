@@ -1,6 +1,7 @@
 import React from "react";
 import affliateimg from "../../assets/images/affliate/affliate.png";
 import decor from "../../assets/images/decorative_images/decorativeImage.svg";
+import AffliateButton from "./AffliateButton";
 
 const Affliate1 = () => {
   return (
@@ -18,11 +19,7 @@ const Affliate1 = () => {
               to provide the best opportunities for working and earning. Don’t
               waste time; register as an affiliate now.
             </p>
-            <div className="flex items-center justify-center">
-              <p className="text-black  background3 rounded-full border border-solid border-black px-8 py-3 font-bold text-center">
-                Become an Affliate
-              </p>
-            </div>
+            <AffliateButton/>
           </div>
           <div className="relative flex-1 mx-10 sm:my-10">
             <img
