@@ -3,18 +3,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+// import Footer from "./components/footer/Footer";
+
 import {
   About,
-  Footer,
   ForgetPassword,
   Home,
+  Footer,
   Login,
   Navbar,
   SignUp,
-} from "./components/main/";
+} from "./components/main";
 import Courses from "./components/main/Courses";
-import Faq from "./components/main/Faq";
 import Affliate from "./pages/Affliate/Affliate";
+import Faq from "./pages/faqs/Faq";
 
 function App() {
   return (

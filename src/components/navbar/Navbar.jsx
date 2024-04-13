@@ -15,8 +15,8 @@ import { toast } from "react-toastify";
 import avatar from "../../assets/images/avatar.png";
 import logo from "../../assets/images/logo2.png";
 import { auth } from "../firebase/config";
-import "../main/index";
 import Loader from "../main/Loader";
+import "../main/index";
 
 import back from "../../assets/images/back.png";
 import { ShowOnLogin, ShowOnLogout } from "../main/HiddenLink";
@@ -78,7 +78,7 @@ function Navbar() {
     <>
       {isLoading && <Loader />}
       <nav
-        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8 "
+        className="flex items-center justify-between px-[3.5rem] py-5 w-full tablet:px-8"
         style={{ backgroundImage: `url(${back})` }}
 
         // className={`bg-white flex items-center justify-between px-[3.5rem] py-5 w-full fixed top-0 transition-all z-40 ${
@@ -148,7 +148,6 @@ function Navbar() {
               Affliate
             </NavLink>
           </li>
-
         </ul>
         {/* login */}
         <div className="flex items-center text-lg lg:hidden gap-9">

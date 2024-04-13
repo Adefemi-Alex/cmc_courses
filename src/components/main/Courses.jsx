@@ -1,8 +1,8 @@
 import React from "react";
-import { FaStar, FaUser } from "react-icons/fa";
-import { GiBookmarklet } from "react-icons/gi";
-import coursBg from "../../assets/images/cmcCourse.jpg";
-import coursBg1 from "../../assets/images/coursebg.png";
+// import { FaStar, FaUser } from "react-icons/fa";
+// import { GiBookmarklet } from "react-icons/gi";
+// import coursBg from "../../assets/images/cmcCourse.jpg";
+// import coursBg1 from "../../assets/images/coursebg.png";
 import back from "../../assets/images/back.png";
 import CourseMission from "../../pages/courses/CourseMission";
 import FeaturedCourses from "../../pages/courses/FeaturedCourses";
@@ -12,7 +12,7 @@ import CoursesFaq from "../../pages/courses/CoursesFaq";
 import Questions from "./Questions";
 import Testimonials from "../about/Testimonials";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Courses() {
   return (

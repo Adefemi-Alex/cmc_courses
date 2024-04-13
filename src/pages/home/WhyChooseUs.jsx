@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
         </div>
         <p className="mt-7 flex justify-center items-center ml-10">
           Experience boundless opportunities at your fingertips
-          with ExpertSkillz.
+          with ExpertSkillz.
         </p>
         {/* Card Section */}
         <div className="grid grid-cols-4 gap-4 mx-20 my-10">
