@@ -1,16 +1,17 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { React, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import signupBg from "../../assets/images/signup.png";
-import googleLogo from "../../assets/images/google.png";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/config";
 import { toast } from "react-toastify";
+import facebookLogo from "../../assets/images/facebook.png";
+import googleLogo from "../../assets/images/google.png";
+import signupBg from "../../assets/images/signup.png";
 import Loader from "../../components/main/Loader";
+import { auth } from "../firebase/config";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [IsLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -21,7 +22,6 @@ function Login() {
       .then((userCredential) => {
         // Signed in
         // const user = userCredential.user
-
         toast.success("Login Successful", "Hey welcome back!");
         setIsLoading(false);
         navigate("/");
@@ -36,11 +36,11 @@ function Login() {
 
   return (
     <>
-      {IsLoading && <Loader />}
+      {isLoading && <Loader />}
       <section className="bg-[#CDF8E5]">
         <div className="px-20 items-center justify-center sm:justify-normal sm:mx-auto rounded-2xl w-full h-full">
           <div className="p-20 flex relative">
-            <div className="relative w-2/4">
+            <div className="relative w-3/4">
               <div className="absolute inset-0 bg-cover bg-gradient-to-b from-[#11F1F182] to-[#33FFA882] backdrop-brightness-100 rounded-2xl rounded-r-none"></div>
               <img
                 src={signupBg}
@@ -49,11 +49,36 @@ function Login() {
               />
             </div>
 
-            <div className="px-40 py-[66px] shadow-blackShadow w-3/5 sm:mx-6 rounded-2xl absolute right-20 bg-white">
+            <div className="px-28 py-[86px] shadow-blackShadow w-3/5 sm:mx-6 rounded-2xl absolute right-20 bg-white">
               <h3 className="text-center font-bold text-black text-fontSize2">
                 Log <span className="text-[#33FFA8]">In</span>
               </h3>
-              <form className=" flex flex-col gap-5 leading-10" onSubmit={signinUser}>
+              <form
+                className="flex flex-col gap-5 leading-10"
+                onSubmit={signinUser}
+              >
+                <div className="flex justify-between mb-0 mt-7 w-full">
+                  {/* Sign in with Google button */}
+                  <button className="flex items-center gap-2 w-60 bg-white px-3 py-2 border-[#33FFA8] border-inset border-2 rounded-md text-black shadow-lg">
+                    <img
+                      src={googleLogo}
+                      alt="Google Logo"
+                      className="w-12 h-7"
+                    />
+                    Sign in with Google
+                  </button>
+                  {/* Sign in with Facebook button */}
+                  <button className="flex items-center gap-2 w-60 bg-white px-3 py-2 border-[#33FFA8] border-inset border-2 rounded-md text-black shadow-lg">
+                    <img
+                      src={facebookLogo}
+                      alt="Facebook Logo"
+                      className="w-10 h-7"
+                    />
+                    Sign in with Facebook
+                  </button>
+                </div>
+                {/* Or section */}
+                <p className="text-center text-gre`0y">- OR -</p>
                 <input
                   type="email"
                   name="email"
@@ -61,7 +86,7 @@ function Login() {
                   value={email}
                   placeholder="Email Address"
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full outline-none text-grays border-b-2 border-black"
+                  className="w-full outline-none text-grays border-b-2 border-grey"
                 />
                 <input
                   type="password"
@@ -70,7 +95,7 @@ function Login() {
                   value={password}
                   placeholder="Password"
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full outline-none text-grays border-b-2 border-black"
+                  className="w-full outline-none text-grays border-b-2 border-grey"
                 />
                 <div className="flex w-full gap-2">
                   <p className="text-[#33FFA8]">Forgot Password?</p>

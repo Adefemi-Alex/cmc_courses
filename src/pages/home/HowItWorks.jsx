@@ -19,7 +19,11 @@ const HowItWorks = () => {
           </div>
           {/* Centered image */}
           <div className="w-[650px]">
-            <img src={background} alt="line" className="w-full -mt-10 z-0 object-cover" />
+            <img
+              src={background}
+              alt="line"
+              className="w-full -mt-10 z-0 object-cover"
+            />
           </div>
         </div>
         {/* Header section */}
@@ -38,7 +42,7 @@ const HowItWorks = () => {
         </div>
 
         <h2 className="text-2xl mt-7 flex justify-center items-center">
-          With ExpertSkillz, It's Easy To Learnand Earn
+          With ExpertSkillz, It's Easy To Learn and Earn
         </h2>
         <p className="mt-7 flex justify-center items-center mx-60">
           Stop struggling alone,Learning and succeding online hasn't been easy

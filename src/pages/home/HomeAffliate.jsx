@@ -10,8 +10,7 @@ const HomeAffliate = () => {
     <>
       {/* Learn and Earn Affliate section */}
 
-      <section className="z-50"
-      >
+      <section className="z-50">
         {/* Arrow and the spiral background image section */}
         <div className="flex justify-between">
           <div className="ml-30 w-full h-full">
@@ -63,10 +62,10 @@ const HomeAffliate = () => {
               </p>
             </div>
             <div className="flex items-left mt-10">
-              {/* Get Started */}
+              {/* More About Affliate */}
               <NavLink to="/affliate">
                 <button className="background3 hover:background text-black font-bold py-2 px-4 rounded-full">
-                  Become an Affliate
+                  More About Affliate
                 </button>
               </NavLink>
             </div>
