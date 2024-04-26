@@ -1,9 +1,9 @@
 import React from "react";
 
-const AffliateButton = ({text}) => {
+const AffliateButton = ({text, divclassName}) => {
   return (
     <>
-      <div className="flex items-center justify-center my-2">
+      <div className={divclassName}>
         <p className="text-black  background3 rounded-full border border-solid border-black px-8 py-3 font-bold text-center">
           {text}
         </p>

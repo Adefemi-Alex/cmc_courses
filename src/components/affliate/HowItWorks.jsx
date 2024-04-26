@@ -47,7 +47,10 @@ const HowItWorks = () => {
             </p>
           </div>
         </div>
-        <AffliateButton text={"Become an Affiliate"}/>
+        <AffliateButton
+          text={"Become an Affiliate"}
+          divclassName={"flex items-center justify-center my-2"}
+        />
       </section>
     </>
   );

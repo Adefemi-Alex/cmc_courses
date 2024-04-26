@@ -19,7 +19,10 @@ const Affliate1 = () => {
               to provide the best opportunities for working and earning. Don’t
               waste time; register as an affiliate now.
             </p>
-            <AffliateButton text={"Become an Affiliate"} />
+            <AffliateButton
+              text={"Become an Affiliate"}
+              divclassName={"flex items-center justify-center my-2"}
+            />
           </div>
           <div className="relative flex-1 mx-10 sm:my-10">
             <img

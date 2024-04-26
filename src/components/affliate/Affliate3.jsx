@@ -18,7 +18,7 @@ const Affliate3 = () => {
               training program to learn the ropes. Register below for a head
               start.
             </p>
-          <AffliateButton text={"Get Started"} className={"flex my-2"}/>
+          <AffliateButton text={"Get Started"} divclassName={"flex my-2"}/>
         </div>
       </section>
     </>
