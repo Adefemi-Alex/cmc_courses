@@ -25,7 +25,7 @@ const Affliate2 = () => {
               Your opportunity to maximize your income is waiting – activate
               your affiliate account now!
             </p>
-            <AffliateButton/>
+            <AffliateButton text={"Become an Affiliate"}/>
           </div>
         </div>
       </section>

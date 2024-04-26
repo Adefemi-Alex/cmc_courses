@@ -47,7 +47,7 @@ const HowItWorks = () => {
             </p>
           </div>
         </div>
-        <AffliateButton/>
+        <AffliateButton text={"Become an Affiliate"}/>
       </section>
     </>
   );
