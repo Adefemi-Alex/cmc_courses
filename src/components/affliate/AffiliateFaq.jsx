@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import back from "../../assets/images/back.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import { affiliateData } from "./affiliateData";
@@ -21,7 +22,10 @@ const AffiliateFaq = () => {
   };
   return (
     <>
-      <div className="faq pt-44 pb-10 px-10">
+      <div
+        className="faq pt-11 pb-10 px-10"
+        style={{ backgroundImage: `url(${back})` }}
+      >
         <h1 className="text-black text-center capitalize text-fontSize1 sm:text-fontSize3">
           Frequently Asked Questions (FAQs):
         </h1>

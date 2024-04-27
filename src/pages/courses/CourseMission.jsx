@@ -22,7 +22,7 @@ const CourseMission = () => {
                   you can do with Expertskillz
                 </span>
               </h2>
-              <p className="text-[hsl(240,11%,46%)] text-xl sm:text-sm font-normal font-poppins ">
+              <p className="text-[hsl(240,11%,46%)] text-base sm:text-sm font-normal font-poppins ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. maiores
                 animi dicta quidem quod rerum ex facilis ullam dolor labore, ea
                 debitis incidunt quia ipsa vitae sapiente, iure sequi beatae?

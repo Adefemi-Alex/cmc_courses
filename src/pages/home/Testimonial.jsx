@@ -78,11 +78,6 @@ const Testimonials = () => {
 
   return (
     <section className="overflow-hidden">
-      <div className="w-full items-center justify-center text-center mt-20 mb-12">
-        <h1 className="text-fontSize1 sm:text-fontSize2">
-          Hear From Our Top Affliates
-        </h1>
-      </div>
       <div className="items-center justify-center relative py-10">
         <img
           src={decor1}

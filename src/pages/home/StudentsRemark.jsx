@@ -28,7 +28,7 @@ const StudentsRemark = () => {
         <div className="flex justify-center items-center -mt-[190px]">
           <h1 className="ml-8 text-4xl lg:text-5xl xl:text-6xl relative">
             What{" "}
-            <span className="relative inline-block ml-3 -mr-3 w-[180px]">
+            <span className="relative inline-block  ">
               Students
               <img
                 src={vector}
