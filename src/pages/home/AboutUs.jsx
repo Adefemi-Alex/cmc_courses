@@ -47,23 +47,23 @@ const AboutUs = () => {
           {/* </div> */}
         </div>
         {/* About us body */}
-        <div className="relative flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
+        <div className="relative flex justify-evenly md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
           <div className="mt-4 md:mx-0 ml-8 md:ml-2 xl:ml-4">
             <img
               src={HomeImg2}
               alt="person"
-              className="w-[980px] h-[500px] object-fit"
+              className="h-full w-full"
             />
           </div>
-          <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
+          <div className="mx-10 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
             <div className="mt-40">
-              <h1 className="font-nunito font-bold text-4xl md:text-4xl xl:text-5xl leading-tight">
+              <h1 className="font-nunito md:text-4xl xl:text-5xl leading-[54px] font-semibold text-[36px] w-[630px]">
                 High-Quality Trainings and Guidance to Achieve Great Results
                 with Your Online Skill.
               </h1>
             </div>
             <div>
-              <p className="mt-10">
+              <p className="mt-8 font-normal text-base text-[#4F4E55] w-[450px]">
                 Our premium training and tailored guidance empower you to
                 succeed regardless of your prior experience.
               </p>
@@ -71,7 +71,7 @@ const AboutUs = () => {
             <div className="flex items-left mt-10">
               {/* Get Started */}
               <NavLink to="/getstarted">
-                <button className="background3 hover:background text-black font-bold py-2 px-4 rounded-full">
+                <button className="background3 hover:background text-black font-bold py-4 px-6 rounded-full border border-black">
                   Learn More
                 </button>
               </NavLink>

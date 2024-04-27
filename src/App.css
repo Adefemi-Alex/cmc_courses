@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+.gradient-background {
+    background: radial-gradient(169.40% 18.55% at 94.76% 16.29%, rgba(200, 251, 231, 0.40) 10%,  rgba(17, 241, 241, 0.40) 40%, rgba(51, 255, 168, 0.30) 90%,);
+}
+
 .text-black {
     color: black;
 }
@@ -13,7 +17,6 @@ body {
     @apply text-black;
 
     /* @apply text-black underline underline-offset-4; */
-
 }
 
 .text-gray-light {

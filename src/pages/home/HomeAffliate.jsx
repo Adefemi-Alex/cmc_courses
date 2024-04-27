@@ -44,10 +44,10 @@ const HomeAffliate = () => {
           {/* </div> */}
         </div>
         {/* Learn and Earn body */}
-        <div className="flex justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
+        <div className="flex justify-evenly md:justify-center xl:justify-between w-full max-w-screen-lg h-[470px]">
           <div className="mx-12 md:mx-0 md:mr-2 xl:mr-4 max-w-xl w-full">
             <div className="mt-36">
-              <h1 className="font-nunito font-bold text-5xl md:text-5xl xl:text-6xl leading-tight">
+              <h1 className="font-nunito text-5xl md:text-5xl xl:text-6xl leading-tight">
                 Don’t Just Learn, Earn. Build Your Online Income With{" "}
                 <span className="text-span">ExpertSkillz.</span>
               </h1>
@@ -70,11 +70,11 @@ const HomeAffliate = () => {
               </NavLink>
             </div>
           </div>
-          <div className="mt-4 md:mx-0 ml-8 md:ml-2 xl:ml-4">
+          <div className="mt-4 md:mx-0 mx-8  md:ml-2 xl:ml-4">
             <img
               src={HomeImg3}
               alt="person"
-              className="w-[980px] h-[500px] object-fit"
+              className="w-full h-full"
             />
           </div>
         </div>
