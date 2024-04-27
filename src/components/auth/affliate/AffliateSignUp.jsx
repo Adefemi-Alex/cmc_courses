@@ -2,13 +2,13 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import facebookLogo from "../../assets/images/facebook.png";
-import googleLogo from "../../assets/images/google.png";
-import signupBg from "../../assets/images/signup.png";
-import Loader from "../../components/main/Loader";
-import { auth } from "../firebase/config";
+import aflliateBg from "../../../assets/images/affliatebg.png";
+import facebookLogo from "../../../assets/images/facebook.png";
+import googleLogo from "../../../assets/images/google.png";
+import Loader from "../../../components/main/Loader";
+import { auth } from "../../firebase/config";
 
-function SignUp() {
+function AffliateSignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -59,15 +59,15 @@ function SignUp() {
             <div className="relative w-3/4">
               <div className="absolute inset-0 bg-cover bg-gradient-to-b from-[#11F1F182] to-[#33FFA882] backdrop-brightness-100 rounded-2xl rounded-r-none"></div>
               <img
-                src={signupBg}
+                src={aflliateBg}
                 alt="form background"
                 className="object-cover"
               />
             </div>
 
-            <div className="px-28 py-[86px] shadow-blackShadow w-3/5 sm:mx-6 rounded-2xl absolute right-20 bg-white">
+            <div className="px-28 py-[105px] shadow-blackShadow w-3/5 sm:mx-6 rounded-2xl absolute right-20 bg-white">
               <h3 className="text-center font-bold text-black text-fontSize2">
-                Sign <span className="text-[#33FFA8]">Up</span>
+                Affliate Sign <span className="text-[#33FFA8]">Up</span>
               </h3>
               <form className="leading-10" onSubmit={signupUser}>
                 <div className="flex justify-between mb-0 mt-7 w-full">
@@ -161,7 +161,7 @@ function SignUp() {
                 <div>
                   <span>Already have an account?</span>
                   <Link
-                    to="/login"
+                    to="/affliatelogin"
                     className="text-[#33FFA8] hover:text-[#18ff78] pl-2 transition-all hover:font-[600] hover:delay-300"
                   >
                     Log In
@@ -176,4 +176,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default AffliateSignUp;

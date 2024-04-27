@@ -3,13 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-// import Footer from "./components/footer/Footer";
 
 import {
   About,
+  AffliateLogin,
+  AffliateSignUp,
+  Footer,
   ForgetPassword,
   Home,
-  Footer,
   Login,
   Navbar,
   SignUp,
@@ -36,6 +37,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/affliate" element={<Affliate />} />
             <Route path="/getstarted" element={<SignUp />} />
+            <Route path="/affliatelogin" element={<AffliateLogin />} />
+            <Route path="/affliatesignup" element={<AffliateSignUp />} />
           </Routes>
         </main>
         <Footer />
