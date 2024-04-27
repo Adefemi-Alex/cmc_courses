@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-import { data } from ".././faqs/faqdata";
-const CoursesFaq = () => {
-  const [openStates, setOpenStates] = useState(Array(data.length).fill(false));
-  const [moreInfo, setMoreInfo] = useState(Array(data.length).fill(false));
+import { affiliateData } from "./affiliateData";
+
+const AffiliateFaq = () => {
+  const [openStates, setOpenStates] = useState(
+    Array(affiliateData.length).fill(false)
+  );
+  const [moreInfo, setMoreInfo] = useState(
+    Array(affiliateData.length).fill(false)
+  );
   const toggleOpen = (index) => {
     const newOpenStates = [...openStates];
     newOpenStates[index] = !newOpenStates[index];
@@ -25,7 +30,7 @@ const CoursesFaq = () => {
           className="faq-inner  bg-[#F7F7FB] mt-24 py-16 px-8 flex justify-center items-center 
         flex-col space-y-8"
         >
-          {data.slice(0, 4).map(({ id, question, answer }, index) => (
+          {affiliateData.slice(0, 4).map(({ id, question, answer }, index) => (
             <div className="faq-each bg-white text-black w-[896px] max-w-[80%] h-auto p-11 rounded-2xl">
               <div
                 className="question-section flex justify-between items-center"
@@ -84,4 +89,4 @@ const CoursesFaq = () => {
   );
 };
 
-export default CoursesFaq;
+export default AffiliateFaq;
