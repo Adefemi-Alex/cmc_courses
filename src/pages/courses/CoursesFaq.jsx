@@ -47,21 +47,21 @@ const CoursesFaq = () => {
                 }`}
               >
                 <p
-                  className={` text-[#6F6C90] ${
-                    moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
-                  }  
-               `}
+                  className={` text-[#6F6C90] `}
+                  // ${
+                  //   moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
+                  // }
                 >
                   {answer}
                 </p>
-                {/* <span
+                <span
                   className="cursor-pointer"
                   onClick={() => {
                     toggleInfo(index);
                   }}
                 >
-                  {moreInfo[index] ? "See less" : "See more"}
-                </span> */}
+                  {/* {moreInfo[index] ? "See less" : "See more"} */}
+                </span>
               </div>
             </div>
           ))}

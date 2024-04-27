@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import HomeCurve from "../../assets/images/HomeCurve.png";
-import HomeImg from "../../assets/images/HomeImg.png";
+import HomeImg from "../../assets/images/home_main.png";
 import HomeLine from "../../assets/images/HomeLine.png";
 import back from "../../assets/images/back.png";
 import AboutUs from "./AboutUs";
@@ -15,7 +15,7 @@ import WhyChooseUs from "./WhyChooseUs";
 function Home() {
   return (
     <>
-      <section className='gradient-background'>
+      <section style={{ backgroundImage: `url(${back})` }}>
         {/* Head */}
         <div className="mt-0 pb-10 font-nunito z-0 h-full w-full justify-center items-center">
           <div className="relative grid grid-cols-2 sm:grid-cols-1 sm:w-[767px] sm:h-[130vh] md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 justify-between md:justify-center xl:justify-between w-full max-w-screen-lg h-[570px]">
@@ -57,7 +57,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="md:mx-0 ml-0 md:ml-2 xl:ml-4">
+            <div className="md:mx-0 ml-0 md:ml-2 xl:ml-4 w-[600px] h-[400px] ">
               <img src={HomeImg} alt="person" className="w-full h-full" />
             </div>
           </div>

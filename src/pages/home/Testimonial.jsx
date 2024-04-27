@@ -7,16 +7,16 @@ import "../../pages/about/About.css";
 import person1 from "../../assets/images/Testimonial1.png";
 import person2 from "../../assets/images/Testimonial2.png";
 import person3 from "../../assets/images/Testimonial3.png";
-import about from "../../assets/images/decorative_images/decorativeImage.svg";
-import about1 from "../../assets/images/decorative_images/decorativeImage2.svg";
-import about2 from "../../assets/images/decorative_images/decorativeImage3.svg";
+import decor1 from "../../assets/images/decorative_images/Ornament 63.svg";
+import decor2 from "../../assets/images/decorative_images/Ornament 64.png";
+import decor3 from "../../assets/images/decorative_images/Ornament 65.svg";
 import prevImage from "../../assets/images/leftArrow.png";
 import nextImage from "../../assets/images/rightArrow.png";
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const testimonialsData = [
+  const topAffliatesData = [
     {
       name: "Adejumo Eniola",
       quote:
@@ -41,11 +41,23 @@ const Testimonials = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    className: "center",
+    centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    autoplaySpeed: 2000,
+    appendDots: (dots) => (
+      <div
+        style={{
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    afterChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
   const sliderRef = React.useRef(null);
@@ -65,68 +77,54 @@ const Testimonials = () => {
   };
 
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="items-center justify-center relative py-10">
         <img
-          src={about2}
+          src={decor1}
           alt="Card Image"
-          className="absolute top-20 left-32 -z-50 sm:w-50 sm:top-0 sm:left-16"
+          className="absolute -top-8 right-52 -z-50 sm:w-50 sm:-right-0"
         />
         <img
-          src={about1}
+          src={decor2}
           alt="Card Image"
-          className="absolute top-10 left-20 -z-50 sm:w-50 sm:-top-5 sm:left-5"
+          className="absolute top-32 right-36 -z-50 sm:w-50 sm:-right-0"
+        />
+        <img
+          src={decor3}
+          alt="Card Image"
+          className="absolute top-4 right-28 -z-50 sm:w-50 sm:-right-0"
         />
         <Slider {...settings} initialSlide={currentSlide} ref={sliderRef}>
-          {testimonialsData.map((testimonial, index) => (
+          {topAffliatesData.map((affliate, index) => (
             <div key={index}>
-              <div className="relative sm:my-10 mx-60 sm:mx-2 my-10 h-[80vh]">
-                <img
-                  src={about}
-                  alt="Card Image"
-                  className="absolute -top-11 right-0 -z-50 sm:w-50 sm:-right-0"
-                />
-                <div className="bg-white justify-center items-center text-center mx-20 px-20 sm:m-5 sm:p-5 relative">
-                  <h2 className="pt-10 text-fontSize2">{testimonial.name}</h2>
-                  <div className="flex py-10">
-                    <span className="text-span text-[200px] absolute left-10 top-0">
-                      “
-                    </span>
-                    <p className="text-fontSize3 text-base px-10 w-full">
-                      {testimonial.quote}
-                      <br></br>
-                      <br></br>
-                    </p>
-                    <span className="text-span text-[200px] absolute right-10 -bottom-7 rotate-180">
-                      “
-                    </span>
+              <div className="relative sm:my-10 mx-20 sm:mx-2 my-10">
+                <div className="bg-white flex gap-3 justify-center items-center text-center mx-20 px-20 sm:m-5 sm:p-5 relative rounded-3xl">
+                  <img
+                    src={affliate.personImage}
+                    alt="card image"
+                    className="sm:w-50"
+                  />
+                  <div className="flex flex-col text-left">
+                    <h2 className="pt-10 text-fontSize2 font-bold">
+                      {affliate.name}
+                    </h2>
+                    <div className="flex pb-10 pt-3">
+                      <p className="text-fontSize3 text-base w-full">
+                        {affliate.quote}
+                        <br></br>
+                        <br></br>
+                      </p>
+                      <span className="text-span text-[200px] absolute right-24 -bottom-7 rotate-180">
+                        “
+                      </span>
+                    </div>
                   </div>
-                  <div className="triangle rotate-180 w-10 h-20"></div>
                 </div>
-                <img
-                  src={testimonial.personImage}
-                  alt="card image"
-                  className="absolute ml-[57vh] mt-[60px]"
-                />
-                <img
-                  src={about}
-                  alt="Card Image"
-                  className="absolute bottom-[139px] left-0 -z-50 sm:w-50"
-                />
               </div>
             </div>
           ))}
         </Slider>
-        <img
-          src={about1}
-          alt="Card Image"
-          className="absolute bottom-[255px] right-32 -z-50 sm:w-50 sm:bottom-0 sm:right-16"
-        />
-        <img
-          src={about2}
-          alt="Card Image"
-          className="absolute bottom-[210px] right-20 -z-50 sm:w-50 sm:-bottom-5 sm:right-5"
-        />
+
         <div className="absolute top-1/3 -translate-y-1/2 left-[150px] cursor-pointer w-16">
           <img src={prevImage} alt="Prev" onClick={goToPrevSlide} />
         </div>

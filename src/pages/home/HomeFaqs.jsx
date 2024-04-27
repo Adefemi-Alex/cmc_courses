@@ -49,40 +49,43 @@ const HomeFaqs = () => {
             </span>
           </h1>
         </div>
-        <div
-          className="faq-inner  bg-[#F7F7FB] mt-24 py-16 px-8 flex justify-center items-center 
+        <div className="faq-outer px-14">
+          <div
+            className="faq-inner  bg-[#F7F7FB] mt-24 py-16 px-8 flex justify-center items-center 
         flex-col space-y-8"
-        >
-          {data.slice(0, 4).map(({ id, question, answer }, index) => (
-            <div className="faq-each bg-white text-black w-[896px] max-w-[80%] h-auto p-11 rounded-2xl">
-              <div
-                className="question-section flex justify-between items-center"
-                key={id}
-                onClick={() => toggleOpen(index)}
-              >
-                <h2>{question}</h2>
+          >
+            {data.slice(0, 4).map(({ id, question, answer }, index) => (
+              <div className="faq-each bg-white text-black w-[896px] max-w-[80%] h-auto p-11 rounded-2xl">
                 <div
-                  className={`arrow p-2  text-[#33FFA8] shadow-lg rounded-full transition-all duration-500 ease-in-out   ${
-                    openStates[index] ? "rotate-90 background3 text-white" : ""
+                  className="question-section flex justify-between items-center"
+                  key={id}
+                  onClick={() => toggleOpen(index)}
+                >
+                  <h2>{question}</h2>
+                  <div
+                    className={`arrow p-2  text-[#33FFA8] shadow-lg rounded-full transition-all duration-500 ease-in-out   ${
+                      openStates[index]
+                        ? "rotate-90 background3 text-white"
+                        : ""
+                    }`}
+                  >
+                    <IoIosArrowForward size={25} className="cursor-pointer" />
+                  </div>
+                </div>
+                <div
+                  className={`mt-4 transition-all duration-500 ease-in-out  ${
+                    openStates[index] ? "opacity-1 h-full" : "h-0 opacity-0"
                   }`}
                 >
-                  <IoIosArrowForward size={25} className="cursor-pointer" />
-                </div>
-              </div>
-              <div
-                className={`mt-4 transition-all duration-500 ease-in-out  ${
-                  openStates[index] ? "opacity-1 h-full" : "h-0 opacity-0"
-                }`}
-              >
-                <p
-                  className={` text-[#6F6C90] ${
-                    moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
-                  }  
+                  <p
+                    className={` text-[#6F6C90] ${
+                      moreInfo[index] ? "line-clamp-none" : "line-clamp-2"
+                    }  
                `}
-                >
-                  {answer}
-                </p>
-                {/* <span
+                  >
+                    {answer}
+                  </p>
+                  {/* <span
                   className="cursor-pointer"
                   onClick={() => {
                     toggleInfo(index);
@@ -90,9 +93,10 @@ const HomeFaqs = () => {
                 >
                   {moreInfo[index] ? "See less" : "See more"}
                 </span> */}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="flex justify-center w-full">
           <NavLink to="/faqs">

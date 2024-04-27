@@ -10,13 +10,14 @@ const CoursesAffiliate = () => {
         <h1 className="text-black text-center capitalize text-fontSize1 sm:text-fontSize3">
           affliated courses
         </h1>
-        <div className=" mt-24 affiliate-container flex justify-between items-center lg:flex-col xl:flex-row">
+        <div className=" mt-24 affiliate-container  grid md:grid-cols-1 xl:grid-cols-2 xl:w-full justify-between items-center lg:flex-col xl:flex-row">
           <div className="affiliate-inner  w-[980px] relative rounded-b-2xl before:absolute before:rounded-b-2xl before:w-full before:h-full  before:filter before:backdrop-blur-sm before:top-0 ">
             <div className="terminal bg-[#EAEAEA] w-full h-8 flex items-center space-x-4 rounded-t-2xl">
               <div className="bg-red-600 w-4 h-4 rounded-full ml-4"></div>
               <div className="bg-yellow-400 w-4 h-4 rounded-full"></div>
               <div className="bg-green-600 w-4 h-4 rounded-full"></div>
             </div>
+
             <div className=" rounded-b-2xl">
               <div className="image-section ">
                 {/* #EAEAEA    for terminal*/}
@@ -48,7 +49,6 @@ const CoursesAffiliate = () => {
               </div>
             </div>
             {/* AFFILIATE START */}
-
             <div className="affiliate-inner  w-[630px] absolute top-16 left-12">
               <div className="terminal bg-[#EAEAEA] w-full h-8 flex items-center space-x-4 rounded-t-2xl">
                 <div className="bg-red-600 w-4 h-4 rounded-full ml-2"></div>
@@ -102,7 +102,6 @@ const CoursesAffiliate = () => {
                 <HiUsers size={35} className="" />
               </div>
             </div>
-
             {/* AFFILIATE END */}
           </div>
           <div className="word-section pl-40">

@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 import person from "../../assets/images/affliate/affliate2.png";
+import person1 from "../../assets/images/Testimonial1.png";
+import person2 from "../../assets/images/Testimonial2.png";
+import person3 from "../../assets/images/Testimonial3.png";
 import decor1 from "../../assets/images/decorative_images/Ornament 63.svg";
 import decor2 from "../../assets/images/decorative_images/Ornament 64.png";
 import decor3 from "../../assets/images/decorative_images/Ornament 65.svg";
@@ -15,22 +18,22 @@ const TopAffliates = () => {
 
   const topAffliatesData = [
     {
-      name: "Ruth Chinoye",
+      name: "Adejumo Eniola",
       quote:
-        "Becoming a top affiliate with ExpertSkillz has been an incredible opportunity for me. If someone had told me two years ago that I would be working with ExpertSkillz and earning a consistent income every week in dollars, I wouldn't have believed it. But here I am today. With this platform, I've not only learned valuable skills but also earned a substantial income while working from home. I am truly grateful and will always cherish this experience.",
-      personImage: person,
+        "ExpertSkillz has been a total game-changer for me in the online world! Their first course which is their flagship course on Affiliate Marketing “CMC” is top-notch. With the trainings I got on CMC, I have seen massive results in no time even as a newbie! Another thing is, the mentorship on CMC is super beginner-friendly.",
+      personImage: person1,
     },
     {
-      name: "Ruth Chinoye",
+      name: "Adejumo Eniola",
       quote:
-        "Becoming a top affiliate with ExpertSkillz has been an incredible opportunity for me. If someone had told me two years ago that I would be working with ExpertSkillz and earning a consistent income every week in dollars, I wouldn't have believed it. But here I am today. With this platform, I've not only learned valuable skills but also earned a substantial income while working from home. I am truly grateful and will always cherish this experience.",
-      personImage: person,
+        "ExpertSkillz has been a total game-changer for me in the online world! Their first course which is their flagship course on Affiliate Marketing “CMC” is top-notch. With the trainings I got on CMC, I have seen massive results in no time even as a newbie! Another thing is, the mentorship on CMC is super beginner-friendly.",
+      personImage: person2,
     },
     {
-      name: "Ruth Chinoye",
+      name: "Adejumo Eniola",
       quote:
-        "Becoming a top affiliate with ExpertSkillz has been an incredible opportunity for me. If someone had told me two years ago that I would be working with ExpertSkillz and earning a consistent income every week in dollars, I wouldn't have believed it. But here I am today. With this platform, I've not only learned valuable skills but also earned a substantial income while working from home. I am truly grateful and will always cherish this experience.",
-      personImage: person,
+        "ExpertSkillz has been a total game-changer for me in the online world! Their first course which is their flagship course on Affiliate Marketing “CMC” is top-notch. With the trainings I got on CMC, I have seen massive results in no time even as a newbie! Another thing is, the mentorship on CMC is super beginner-friendly.",
+      personImage: person3,
     },
   ];
 
