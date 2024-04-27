@@ -1,6 +1,11 @@
 import rec1 from "../../assets/images/rec1.jfif";
 import rec2 from "../../assets/images/rec2.jfif";
 import rec3 from "../../assets/images/rec3.jfif";
+import rec4 from "../../assets/images/rec4.jfif";
+import rec5 from "../../assets/images/rec5.jfif";
+import rec6 from "../../assets/images/rec6.jfif";
+import rec7 from "../../assets/images/rec7.jfif";
+import rec8 from "../../assets/images/rec8.jfif";
 import courseimg1 from "../../assets/images/courseimg1.png";
 import courseimg2 from "../../assets/images/courseimg2a.jfif";
 import courseimg3 from "../../assets/images/courseimg3a.jfif";
@@ -26,6 +31,36 @@ export const recommended_Courses_Data = [
   },
   {
     image: courseimg1,
+    title: "Web design",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: rec4,
+    title: "Web design",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: rec5,
+    title: "Web design",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: rec6,
+    title: "Web design",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: rec7,
+    title: "Web design",
+    description:
+      "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",
+  },
+  {
+    image: rec8,
     title: "Web design",
     description:
       "Discover lucrative design opportunities. Explore fields such as Graphic design, Product design, UI/UX Design and more. In this class, you’ll learn how to master design techniques and monetize your skills by offering professional services to companies and business owners.",

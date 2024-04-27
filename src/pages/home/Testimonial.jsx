@@ -78,60 +78,43 @@ const Testimonials = () => {
           className="absolute top-10 left-20 -z-50 sm:w-50 sm:-top-5 sm:left-5"
         />
         <Slider {...settings} initialSlide={currentSlide} ref={sliderRef}>
-          {testimonialsData.map((testimonial, index) => (
+          {testimonialsData.map((affliate, index) => (
             <div key={index}>
-              <div className="relative sm:my-10 mx-60 sm:mx-2 my-10 h-[80vh]">
-                <img
-                  src={about}
-                  alt="Card Image"
-                  className="absolute -top-11 right-0 -z-50 sm:w-50 sm:-right-0"
-                />
-                <div className="bg-white justify-center items-center text-center mx-20 px-20 sm:m-5 sm:p-5 relative">
-                  <h2 className="pt-10 text-fontSize2">{testimonial.name}</h2>
-                  <div className="flex py-10">
-                    <span className="text-span text-[200px] absolute left-10 top-0">
-                      “
-                    </span>
-                    <p className="text-fontSize3 text-base px-10 w-full">
-                      {testimonial.quote}
-                      <br></br>
-                      <br></br>
-                    </p>
-                    <span className="text-span text-[200px] absolute right-10 -bottom-7 rotate-180">
-                      “
-                    </span>
+              <div className="relative sm:my-10 mx-20 sm:mx-2 my-10">
+                <div className="bg-white flex gap-3 justify-center items-center text-center mx-20 px-20 sm:m-5 sm:p-5 relative rounded-3xl">
+                  <img
+                    src={affliate.personImage}
+                    alt="card image"
+                    className="sm:w-50"
+                  />
+                  <div className="flex flex-col text-left">
+                    <h2 className="pt-10 text-fontSize2 font-bold">
+                      {affliate.name}
+                    </h2>
+                    <div className="flex pb-10 pt-3">
+                      <p className="text-fontSize3 text-base w-full">
+                        {affliate.quote}
+                        <br></br>
+                        <br></br>
+                      </p>
+                      <span className="text-span text-[200px] absolute right-24 -bottom-7 rotate-180">
+                        “
+                      </span>
+                    </div>
                   </div>
-                  <div className="triangle rotate-180 w-10 h-20"></div>
                 </div>
-                <img
-                  src={testimonial.personImage}
-                  alt="card image"
-                  className="absolute ml-[57vh] mt-[60px]"
-                />
-                <img
-                  src={about}
-                  alt="Card Image"
-                  className="absolute bottom-[139px] left-0 -z-50 sm:w-50"
-                />
               </div>
             </div>
           ))}
         </Slider>
-        <img
-          src={about1}
-          alt="Card Image"
-          className="absolute bottom-[255px] right-32 -z-50 sm:w-50 sm:bottom-0 sm:right-16"
-        />
-        <img
-          src={about2}
-          alt="Card Image"
-          className="absolute bottom-[210px] right-20 -z-50 sm:w-50 sm:-bottom-5 sm:right-5"
-        />
-        <div className="absolute top-1/3 -translate-y-1/2 left-[150px] cursor-pointer w-16">
-          <img src={prevImage} alt="Prev" onClick={goToPrevSlide} />
-        </div>
-        <div className="absolute top-1/3 -translate-y-1/2 right-[150px] cursor-pointer w-16">
-          <img src={nextImage} alt="Next" onClick={goToNextSlide} />
+
+        <div className="flex justify-center">
+          <div className="absolute  -translate-y-1/2 left-[500px] cursor-pointer w-16">
+            <img src={prevImage} alt="Prev" onClick={goToPrevSlide} />
+          </div>
+          <div className="absolute -translate-y-1/2 right-[500px] cursor-pointer w-16">
+            <img src={nextImage} alt="Next" onClick={goToNextSlide} />
+          </div>
         </div>
       </div>
     </section>

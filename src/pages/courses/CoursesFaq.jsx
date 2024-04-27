@@ -54,14 +54,14 @@ const CoursesFaq = () => {
                 >
                   {answer}
                 </p>
-                {/* <span
+                <span
                   className="cursor-pointer"
                   onClick={() => {
                     toggleInfo(index);
                   }}
                 >
                   {moreInfo[index] ? "See less" : "See more"}
-                </span> */}
+                </span>
               </div>
             </div>
           ))}

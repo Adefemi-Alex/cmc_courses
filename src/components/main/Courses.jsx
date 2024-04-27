@@ -10,7 +10,6 @@ import CoursesAffiliate from "../../pages/courses/CoursesAffiliate";
 import CoursesChoice from "../../pages/courses/CoursesChoice";
 import CoursesFaq from "../../pages/courses/CoursesFaq";
 import Questions from "./Questions";
-import Testimonials from "../about/Testimonials";
 
 // import { Link } from "react-router-dom";
 
@@ -34,7 +33,6 @@ function Courses() {
           <CoursesChoice />
           <CoursesFaq />
           <Questions />
-          <Testimonials />
         </div>
 
         {/* <div className="my-16 px-4"> */}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { recommended_Courses_Data, popular_Courses_Data } from "./CoursesCard";
+import Testimonials from "../home/Testimonial";
 // import back from "../../assets/images/back.png";
 const FeaturedCourses = () => {
   const [switcher, setSwitch] = useState(0);
@@ -44,7 +45,7 @@ const FeaturedCourses = () => {
                       <img
                         src={image}
                         alt={title}
-                        className="w-full h-auto  hover:mb-3 transition-all object-cover"
+                        className="w-full h-[209.02px] max-h-full  hover:mb-3 transition-all object-cover"
                       />
                     </div>
                     <div className="inner py-3 pl-6">
@@ -61,7 +62,7 @@ const FeaturedCourses = () => {
             )}
           </div>
         </section>
-
+        <Testimonials />
         {/* Popular courses Section */}
         <section className="Popular pt-16">
           <h1 className="text-black capitalize text-fontSize2 sm:text-fontSize3">
