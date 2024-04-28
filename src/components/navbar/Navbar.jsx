@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import "./Navbaar.css";
 
+import { navData } from "./NavLinks";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -95,62 +96,24 @@ function Navbar() {
           </Link>
         </div>
         {/* big screen */}
-        <ul className="flex text-lg items-center gap-12 lg:hidden list-none">
-          <li className="text-gray-light">
-            <NavLink
-              to="/"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="text-gray-light">
-            <NavLink
-              to="/about"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
-              About Us
-            </NavLink>
-          </li>
-
-          <li className="text-gray-light">
-            <NavLink
-              to="/courses"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
-              Our Courses
-            </NavLink>
-          </li>
-
-          <li className="text-gray-light">
-            <NavLink
-              to="/faqs"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
-              FAQ's
-            </NavLink>
-          </li>
-          <li className="text-gray-light">
-            <NavLink
-              to="/affliate"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
-              Affliate
-            </NavLink>
-          </li>
+        <ul className="flex  3xl:text-lg items-center gap-12 lg:hidden list-none">
+          {navData.map(({ to, label }, index) => {
+            return (
+              <li className="text-gray-light" key={index}>
+                <NavLink
+                  to={to}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  {label}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
         {/* login */}
-        <div className="flex items-center text-lg lg:hidden gap-9">
+        <div className="flex items-center 3xl-text-lg lg:hidden gap-9">
           <ShowOnLogout setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}>
             <li className="text-gray-light list-none">
               <NavLink
@@ -165,7 +128,7 @@ function Navbar() {
           </ShowOnLogout>
           {/* Get Started */}
           <NavLink to="/getstarted">
-            <button className="background3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="background3 text-base 3xl:text-lg  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Get Started
             </button>
           </NavLink>

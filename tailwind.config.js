@@ -30,7 +30,8 @@ module.exports = {
         fontSize4: "16px",
       },
       screens: {
-        // '2xl': { max: '1400px' },
+        "3xl": { min: "1401px" },
+        "2xl": { max: "1400px" },
 
         xl: { max: "1279px" },
         lg: { max: "1200px" },
