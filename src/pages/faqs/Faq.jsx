@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowForward, IoMdSearch } from "react-icons/io";
 import back from "../../assets/images/back.png";
 import { data } from "./faqdata";
+import { affiliateData } from "../../components/affliate/affiliateData";
 
 const Faq = () => {
   const [openStates, setOpenStates] = useState(Array(data.length).fill(false));
@@ -33,10 +34,19 @@ const Faq = () => {
       faq.question.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredQuestions(filtered);
+    const filteredAffiliate = affiliateData.filter((faq) =>
+      faq.question.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredQuestions([...filtered, filteredAffiliate]);
+    if (query.trim() == "") {
+      handleShowLess();
+    }
+
+    console.log(filteredQuestions);
   };
 
   const handleShowMore = () => {
-    setFilteredQuestions(data);
+    setFilteredQuestions(data || affiliateData);
     setExpanded(true);
   };
 

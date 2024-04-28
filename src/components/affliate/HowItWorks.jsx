@@ -16,8 +16,8 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 md:grid-cols-2 gap-28 sm:gap-10 justify-between my-10 sm:m-10 mx-28">
-          <div className="bg-white rounded-lg p-5 drop-shadow-[0_10px_10px_rgba(51,255,168,1)]">
-            <div className="rounded-lg bg-white drop-shadow-[0_10px_10px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
+          <div className="bg-white rounded-lg p-5 drop-shadow-[0_5px_3px_rgba(51,255,168,1)] w-[320px]">
+            <div className="rounded-lg bg-white drop-shadow-[0_1px_5px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
               <span className="text-span text-lg">1</span>
             </div>
             <p className="my-3">Become an Affliate</p>
@@ -26,8 +26,8 @@ const HowItWorks = () => {
               sign-up fee.
             </p>
           </div>
-          <div className="bg-white rounded-lg p-5 drop-shadow-[0_10px_10px_rgba(51,255,168,1)]">
-            <div className="rounded-lg bg-white drop-shadow-[0_10px_10px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
+          <div className="bg-white rounded-lg p-5 drop-shadow-[0_5px_3px_rgba(51,255,168,1)] w-[320px]">
+            <div className="rounded-lg bg-white drop-shadow-[0_1px_5px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
               <span className="text-span text-lg">2</span>
             </div>
             <p className="my-3">Promote a Product</p>
@@ -36,8 +36,8 @@ const HowItWorks = () => {
               promotional materials.
             </p>
           </div>
-          <div className="bg-white rounded-lg p-5 drop-shadow-[0_10px_10px_rgba(51,255,168,1)]">
-            <div className="rounded-lg bg-white drop-shadow-[0_10px_10px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
+          <div className="bg-white rounded-lg p-5 drop-shadow-[0_5px_3px_rgba(51,255,168,1)] w-[320px]">
+            <div className="rounded-lg bg-white drop-shadow-[0_1px_5px_rgba(13,12,56,0.15)] p-2 mb-5 w-12 text-center">
               <span className="text-span text-lg">3</span>
             </div>
             <p className="my-3">Get Paid</p>
